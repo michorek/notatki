@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Michorowe Notatki</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Notatki <span>Michorowe</span></h1>
+        </header>
+
+        <nav>
+            <ul type="none">
+                <li><a href="javascript.html">Javascript</a></li>
+                <li><a href="index.html">html/css</a></li>
+            </ul>
+        </nav>
+
+        <main>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">Javascript</h2>
+                <p class="data">08.06.2021</p>
+                <p class="tag">#js</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+
+                        <li>
+                            <code>{
+                                "compilerOptions": {
+                                  "module": "commonjs",
+                                  "target": "es6"
+                                },
+                                "exclude": ["node_modules", "**/node_modules/*"]
+                              } </code> - to wpisujemy jako config do jsconfig.json
+                        </li>
+
+                        <li>
+                            <xmp>console</xmp> - terminal, przestrzeń niewidzialna dla użytkownika, do której można wpisać różne przetwarzane wartości, służy do debugowania i testowania kodu
+                            <br><xmp class="ex">javascript jest case sensitive</xmp> - co oznacza, ze ma znaczenie wielkość wpisywanych liter, co innego jest Time i TIME
+                        </li>
+
+                        <li>
+                            <xmp>.log()</xmp> - wyświetla zawartość nawiasu w konsoli
+                            <br><xmp class="ex">console.log(2021);</xmp>
+                            <br><xmp>'    '</xmp> - string, pozwala wpisać do konsoli słowa i wartości mieszane, umieszczone pomiedzy apostrofami
+                            <br><xmp class="ex">console.log('michaś jest kochany');</xmp>
+                        </li>
+
+                        <li>
+                            <xmp>comments</xmp> - pomocne przy tworzeniu kodu, pomaga zrozumiec innym nasz kod, ale i nam samym po dluzszym czasie
+                            <br><xmp class="full">// komentarz</xmp> - pojedyncza linijka, krótki komentarz
+                            <br><xmp class="full">/* komentarz */</xmp> - dłuzszy, wielowierszowy komentarz, można go również używać, zeby wtrącić komentarz w środku kodu i on nadal był interaktywny, lub odwrotnie, aby wyłączyć część kodu, ale jej nie usuwać
+                            <img src="komentarz.png">
+                            <br>
+                            <img src="komentarz2.png">
+                        </li>
+
+                        <li>
+                            <xmp>data types</xmp> - rodzaje danych pojawiajacych się w javascript:
+                            <br><xmp class="ex">cyfry</xmp> - 1, 2, 786...
+                            <br><xmp class="ex">stringi</xmp> - 'kupa nie pachnie', '234 to hasło', '2+3=8'
+                            <br><xmp class="ex">boolean</xmp> - daje wartości true/false, jak włącznik on/off na pilocie
+                            <br><xmp class="ex">null</xmp> - brak wartości, celowy zabieg
+                            <br><xmp class="ex">undefined</xmp> - tak jak null to wyraz braku danych, ale działa inaczej
+                            <br><xmp class="ex">symbol</xmp> - nowy ficzer js, jakieś strzałki itd, do uzupełnienia
+                            <br><xmp class="ex">object</xmp> - zbiór złożonych danych, do uzupełnienia
+                            <br>
+                            <br><xmp class="full"> /' </xmp> - jeśli w stringu musimy zwrzeć apostrof, to przed nim dajemy slash, który nie bedzie widoczny w konsoli, inaczej mozemy użyć zewnetrznych cudzysłowow, zeby kod rozumiał ocb
+                        </li>
+
+                        <li>
+                            <xmp>Arithmetic Operators</xmp> - znaki pozwalające na dokonywanie szybkich operacji na liczbach
+                            <br><xmp class="ex">+ - / *</xmp>
+                            <br><xmp class="full">console.log(3 + 4); // Prints 7</xmp>
+                            <br><xmp class="full">console.log(4 * 2); // Prints 8</xmp>
+                            <br><xmp class="full">console.log(9 / 3); // Prints 3</xmp>
+                            <br><xmp class="ex"> % </xmp> - remainder operator, modulo - wyświetla resztę z dzielenia
+                            <br><xmp class="full">console.log(11 % 3);</xmp> - w jedenastce mieszczą się trzy trójki (3x3=9) a reszta to 2 (11-9=2)
+                            <br><xmp class="ex"> . </xmp> - dot operator
+                        </li>
+
+                        <li>
+                            <xmp>dodawanie stringów</xmp> - operator + można również wykorzystywac do łączenia wielu stringów w jeden
+                            <br><xmp class="full">console.log('hi' + 'ya'); // Prints 'hiya'</xmp>
+                            <br><xmp class="full">console.log('One' + ', ' + 'two' + ', ' + 'three!'); // Prints 'One, two, three!'</xmp>
+
+                        </li>
+
+                        <li>
+                            <xmp>properties</xmp> - właściwości danego stringa, pozwala wyciagnąć inne informacje o danym obiekcie, np jego długość znakową
+                            <br><xmp class="ex">console.log('Hello'.length); // Prints 5</xmp> - wyświetla 5, bo ten string składa się z 5 liter
+                        </li>
+
+                        <li>
+                            <xmp>methods</xmp> - funkcje, pozwalające na wykonywanie bardziej złożonych operacji, składają się z dot operatora <xmp> . </xmp>, nazwy funkcji <xmp>log</xmp> i nawiasu <xmp> () </xmp> np. .log()
+
+                            <br><xmp class="ex">console.log('hello'.toUpperCase()); // Prints 'HELLO'</xmp>
+                            <br><xmp class="ex">console.log('Hey'.startsWith('H')); // Prints true</xmp>
+                        </li>
+
+                        <li>
+                            <xmp>przykłady methods:</xmp>
+                            <br><xmp class="ex">.trim()</xmp> - usuwa spacje przed i po
+                            <br><xmp class="ex">.toUpperCase()</xmp> - zmienia tekst na capsa
+                            <br><xmp class="ex">.toLowerCase()</xmp> - odwrotnie
+                            <br><xmp class="ex">.startsWith('x')</xmp> - sprawdza, czy string zaczyna sie od znaku/znaków w nawiasie
+                            <br><xmp class="ex">.repeat(123)</xmp> - powtarza string razy liczba w nawiasie
+                            <br><xmp class="ex">.replace(searchFor, replaceWith)</xmp> - wyszukuje i zamienia jedno na drugie
+                            <br><a href="https://www.w3schools.com/jsref/jsref_obj_string.asp">Methods</a>
+                        
+                        </li>
+
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String MDN</a></li>
+                    
+                        <li>
+                            <xmp>Built-in Objects</xmp> - narzędzia już wbudowane w javascript, których mozemy używac po wywołaniu, zawierają już swoje methodsy
+                            <br><xmp>Math</xmp> - do działań matematycznych
+                            <br><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math">Math</a>
+                            <br><xmp class="full">console.log(Math.random()); // Prints a random number between 0 and 1)</xmp>
+                            <br><xmp class="full">console.log(Math.random() * 50)</xmp> - wyświetla losową liczbę między 0 i 50 mnożąc pierwotny wynik, ale zostaja wartosci po przecinku
+                            <br><xmp class="ex">Math.floor()</xmp> - bierze liczbę i zaokrągla do dolnej wartości całkowitej
+                            <br><xmp class="ex">Math.ceil()</xmp> - zaokrągla do górnej wartości całkowitej
+                            <br><xmp class="ex">Math.round()</xmp> - też zaokrągla, ale zgodnie z regułami zoakrąglania
+                            <br><xmp class="full">console.log(Math.round(Math.random() * 50))</xmp> - poprawiona wersja wczesniejszego, zaokraglajaca do całkowitych dzieki Math.round
+
+                            <br><br>
+                            <xmp>Number</xmp> - do operowania liczbami
+                            <br><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>
+                            <br><xmp class="ex">Number.isInteger()</xmp> - sprawdza, czy liczba jest całkowita
+                        </li>
+
+                        <li>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/aMzAjQ4uUag" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </li>
+                    
+                    </ul>
+                </p>
+            </section>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">Variables</h2>
+                <p class="data">08.06.2021</p>
+                <p class="tag">#js</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+
+                        <li>
+                            <xmp>variable</xmp> - miejsce na wartość, pudełko na dane w pamięci komputera, np. login i hasło, mają swoje nazwy dla łatwiejszego rozrózniania, wartości te moga być aktualizowane i pobierane w celu wykorzystania w innych funkcjach
+                            <br><xmp class="ex">variable to nie value</xmp> - one tylko przechowują value, a nie są tożsame
+                        
+                        </li>
+
+                        <li>
+                            <xmp>var</xmp> - pozwala na tworzenie variables, pierwotne narzędzie, obecnie są jeszcze dwa inne
+                            <br><xmp class="ex">var myName = 'Michor';</xmp> - tworzy zmienną myName o wartości 'Michor'
+                            <br><xmp class="full">console.log(myName);</xmp> - wyświetli 'Michor'
+                            <br>
+                            <br><xmp>nazwy zmiennych nie mogą: </xmp>
+                            <br>- zaczynać się od liczb
+                            <br>- być pisane raz dużą raz małą literą, bo to dwie różne wartości w js
+                            <br>- być nazwane jak zarezerwowane keywordsy np. break, else, for, if, new, export, super, return, switch, try, this
+                            <br><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#keywords">Keywords</a>
+                        </li>
+
+                        <li>
+                            <xmp>let</xmp> - nowa funkcja pozwalajaca na tworzenie variable, obecnie powszechnie uzywana kosztem <xmp>var</xmp>
+                            <img src="let.png">
+                            <br><img src="undefined.png">
+                            Jeśli nie podamy wartości dla zmiennej, to przyjmie ona wartość <xmp class="ex">undefined</xmp>
+                        </li>
+
+                        <li>
+                            <xmp>const</xmp> - constant - pozwala na tworzenie variable, które nie mogą być zmienione, przy próbie zmiany wynikiem będzie błąd TypeError
+                            <br><xmp class="ex">const myName = 'Gilberto';</xmp>
+                            <br><xmp>wartośc const musi byc ustalona przy tworzeniu</xmp> - jeśli jej nie zadeklarujemy, wtedy błąd SyntaxError
+                        </li>
+
+                        <li><xmp>operatory matematyczne</xmp> - pozwalają dodawać, odejmować, dzielić i mnożyć wartości do zmiennych
+                            <img src="operatoryvar.png"> - tworzy zmienną 'w' i dodaje do niej +1
+                            <img src="operator2.png"> - to samo tylko z użyciem skrotowego operatora <xmp>+=</xmp></li> 
+
+                        <li>
+                            <xmp>assignment operators</xmp> - skrótowe operatory, pozwalające na szybszy zapis
+                            <br><xmp class="ex">w += 1</xmp> - zastępuje <xmp class="full">w = w+1</xmp>
+                            <br><xmp class="ex">a -= 2</xmp> - zastępuje <xmp class="full">a = a-2</xmp>
+                            <br><xmp class="ex">y *= 3</xmp> zastepuje <xmp class="full">y = y*3</xmp>
+                            <br><xmp class="ex">k /= 5</xmp> zastępuje <xmp class="full">k = k/5</xmp>
+                            <img src="operator3.png">
+                        </li>
+
+                        <li>
+                            <xmp>increment/decrement operator</xmp> - pozwalają na szybką zmiane wartości o jeden
+                            <br><xmp class="ex">++</xmp> - dodaje 1 do wartości zmiennej
+                            <br><xmp class="ex">--</xmp> - odejmuje 1 od wartości zmiennej
+                            <img src="increment.png">
+                        </li>
+
+                        <li>
+                            <xmp>dodawanie zmiennych i stringów</xmp>
+                            <img src="stringowanie.png">
+                        </li>
+
+                        <li>
+                            <xmp>String Interpolation</xmp> - inna metoda zapisu dodawania zmiennych i stringów, pozwala na pisanie stringów o wielowierszowej strukturze i kopiowanie ich z preformatowanego tekstu, szybszy i czytelniejszy zapis
+                            <br><xmp class="full">let myName = 'Michor'</xmp>
+                            <br><xmp class="full">let myCity = 'Gdansk'</xmp>
+                            <br><xmp class="full">console.log(`My name is ${myName}. My favorite city is ${myCity}`)</xmp>
+                            <br><xmp class="ex">`   `</xmp> - treść wewnątrz to <xmp>template literal</xmp>
+                            <img src="interpolation.png">
+                        </li>
+
+                        <li>
+                            <xmp>typeof</xmp> - operator umożliwiający sprawdzenie rodzaju danych zapisanych w zmiennej
+                            <img src="typeof.png">
+                            <br><xmp class="ex">Przykład zastosowania:</xmp>
+                            <img src="typeof2.png" alt="">
+                        </li>
+                      
+                    </ul>
+                </p>
+            </section>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">Conditional Statements</h2>
+                <p class="data">09.06.2021</p>
+                <p class="tag">#js</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+
+                        <li>
+                            <xmp>conditional statements</xmp> - warunkowe, logiczne zapytania, decydujące o wyborze opcji stosowanej przez program, pytania typu -czy? jeśli?
+                            <br><a href="https://www.codecademy.com/resources/blog/your-guide-to-semicolons-in-javascript/">Semicolon Guide ;;;</a>
+                        </li>
+
+                        <li>
+                            <xmp>if</xmp> - jeżeli - pytanie o warunek do spełnienia, aby podjąc jakąś akcję, w pytaniach binarnych typu "tak czy nie?" 
+                            <img src="if.png">
+                            <br><xmp class="ex">(true/false)</xmp> - parentheses, warunek do spełnienia równy wartości true lub false
+                            <br><xmp class="ex">{   }</xmp> - jeśli warunek zostanie spełniony (true), to kod umieszczony w nawiasie { ### } zostanie wykonany, jeśli nie to nic sie nie dzieje
+                            <img src="if2.png">
+                        </li>
+
+                        <li>
+                            <xmp>else</xmp> - pozwala podjąc akcję, jezeli warunek z <xmp>if</xmp> nie zostanie spełniony i przyjmie wartosc false, musi być zawsze połączony z ifem, razem tworzą parę <xmp>if...else</xmp>
+                            <img src="else.png">
+                            <xmp class="ex">nie wymaga dodatkowego (parentheses)</xmp> - tylko kod do wykonania w {nawiasach}
+                        </li>
+
+                        <li>
+                            <xmp>comparison operators</xmp> - porównanie na zasadzie wielkości lub równania do czegoś 
+                            <br><xmp class="ex"> > </xmp> - większe niż
+                            <br><xmp class="ex"> < </xmp> - mniejsze niż
+                            <br><xmp class="ex"> >= </xmp> - większe lub równe
+                            <br><xmp class="ex"> <= </xmp> - mniejsze lub równe
+                            <br><xmp class="ex"> === </xmp> - równe z (do porównywania liczb i słów) identity operator
+                            <br><xmp class="ex"> !== </xmp> - nie jest równe
+                            <br><xmp class="full">10 < 12 </xmp> - czy 10 jest mniejsze od 12? tak, a więc równa się wartości <xmp>true</xmp>
+                            <br><xmp class="full">'jabłka' === 'pomarańcze'</xmp> czy string 'jabłka' równa się stringowi 'pomarańcze?' - nie, a więc wartośc to <xmp>false</xmp>
+                            <img src="comparison.png">
+                            <img src="rownosc.png">
+                        </li>
+
+                        <li>
+                            <xmp>logical operators</xmp> - operatory pozwalające składać bardziej złożone, kilkuczynnikowe warunki
+                            <br><xmp class="ex"> && </xmp> - and/i operator - obydwa warunki muszą być spełnione na true, jeśli chociaż jeden z nich jest false, to zostanie wykonany kod z operatora else
+                            <img src="and.png">
+                            <br><xmp class="ex"> | | </xmp> - or/lub operator - jeden z warunków musi być spełniony na true, aby całe twierdzenie było true i wykonac kod operatora if, jeśli pierwszy warunek jest true, to następny nie jest nawet sprawdzany
+                            <img src="lub.png">
+                            <br><xmp class="ex"> ! </xmp> - not/bang/nie operator - odwraca znaczenie booleana, jeśli było true, to daje false, troche co innego niż powyższe operatory
+                            <img src="nie.png">
+                            <br><img src="logic.png">
+
+                        </li>
+
+                        <li>
+                            <xmp>truthy / falsy</xmp> - kiedy chcemy sprawdzić, czy wartość zmiennej nie jest pusta, niezerowa, czy ma jakąkolwiek wartosc do siebie przypisaną, możemy umieścić ją w pytaniu <xmp>if</xmp> i jeśli ma coś w sobie, to zwróci wartość <xmp>truthy</xmp> > <xmp>truth</xmp>, jeśli jednak będzie zerowa, to zwróci wartość <xmp>falsy</xmp> > <xmp>false</xmp>
+                            <br>wartości zerowe (falsy):
+                            <br><xmp class="ex"> 0 </xmp> - zero
+                            <br><xmp class="ex">'' ""</xmp> - pusty string
+                            <br><xmp class="ex">null</xmp> - brak jakiekolwiek wartości 
+                            <br><xmp class="ex">undefined</xmp> - brak zadeklarowanej wartości zmiennej
+                            <br><xmp class="ex">NaN</xmp> - not a number
+                            <img src="falsy.png">
+                            <br><img src="falsy2.png" alt="">
+
+                        </li>
+
+                        <li>
+                            <xmp>truthy / falsy assignment</xmp> - pozwala przypisywać zmiennym wartości w oparciu o sprawdzanie czy wartość przypisywana jest obecna, jesli nie, przepisuje się inną, podaną po operatorze or <xmp>||</xmp>
+                            <img src="truthy.png">
+                            <br><img src="truthy2.png">
+                            <br><xmp class="ex">w tym przykładzie powyżej obydwa obrazki są sobie równe</xmp> -  sprawdzamy, czy użytkownik wchodzący na stronę jest zalogowany i co za tym idzie posiada swój login, wtedy zwracamy się do niego w ten sposób, jesli nie, to wtedy wartość username jest zerowa i mówimy do niego 'Stranger'
+            
+                        </li>
+
+                        <li>
+                            <xmp>ternary operator</xmp> - pozwala uprościć twierdzenie if...else
+                            <br><xmp>JEŻELI W IF ELSE WYSTEPUJĄ RETURNY, TO TUTAJ NALEŻY JE DODAĆ PRZED CAŁYM WYRAŻENIEM</xmp>
+                            <br><xmp class="ex">return word==='kupa' ? word='stolec' : word</xmp>
+                            <img src="ternary.png">
+                            <br><img src="ternary2.png" alt="">
+                            <br><xmp class="ex">w przykładzie powyżej obydwa obrazki są sobie równe</xmp> - pomijamy if, zamiast tego podajemy samą zawartość parentheses bez nawiasu i przed znakiem zapytania <xmp> ? </xmp>, następnie bez nawiasów podajemy zawartość kodu dla obydwu opcji true or false, oddzielone od siebie średnikiem <xmp> : </xmp>
+
+                        </li>
+
+                        <li>
+                            <xmp>else if</xmp> - statement - pozwala dodać kolejne opcje do if...else, kroki pośrednie, jeśli pierwotny warunek okaże się fałszywy, zanim przejdziemy do else
+                            <br><xmp class="ex">tak jak if posiada warunek w nawiasie!</xmp>
+                            <img src="elseif.png" alt="">
+                        </li>
+
+                        <li>
+                            <xmp>switch</xmp> - upraszcza sprawdzanie wielu elementów w if...else...elseif, wprowadzając inny zapis
+                            <img src="switch.png" alt="">
+                            <br><xmp class="ex">switch</xmp> - keyword, rozpoczyna proces
+                            <br><xmp class="ex">(   )</xmp> - warunek, który sprawdzamy, to jak w if
+                            <br><xmp class="ex">{   }</xmp> - blok z cases
+                            <br><xmp class="ex">case ' ' :</xmp> w apostrofach jest porownywana fraza, a po średniku podajemy egzekwowany kod, jesli fraza sie zgadza z warunkiem
+                            <br><xmp class="ex">break;</xmp> - mówi komputerowi, ze to koniec case i nie ma żadnego kodu do sprawdzenia w jego obrębie, jeśli go zabraknie, to tylko pierwszy case zostanie sprawdzony, a reszta nie
+                            <br><xmp class="ex">default:</xmp> - co robić, jeśli nic nie pasuje do wzoru, po średniku kod
+                            <br><xmp class="full">case: 'Saturn', 'saturn', 's4turn':</xmp> jeśli, chcemy do jednego case dodać kilka możliwych wywołań, dodajemy je po przecinku
+
+                        </li>
+
+                    </ul>
+                </p>
+            </section>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">Functions</h2>
+                <p class="data">16.06.2021</p>
+                <p class="tag">#js</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+
+                        <li>
+                            <xmp>function</xmp> - blok kodu, którego mozemy używac wielokrotnie, zawierający szereg poleceń, wykonujących określone zadanie
+                            <img src="declaration.svg">
+                            <br><xmp class="full">function getReminder()  {   }</xmp>
+                            <br><xmp class="ex">identifier</xmp> - nazwa funkcji
+                            <br><xmp class="ex">{    }</xmp> - body, zasadniczy kod wykonawczy
+                            <br><xmp class="ex">hoisting</xmp> - właściwość, pozwalająca na użycie funkcji, mimo że została ona zdefiniowana dopiero w dalszej części kodu, nie powinno się tak robić, ale sie da
+
+                        </li>
+
+                        <li>
+                            <xmp>calling function</xmp> - pozwala na wywołanie działania funkcji, sama deklaracja <xmp>function</xmp> tego nie czyni
+                            <br><xmp class="full">getReminder();</xmp> - wywołuje funkcję po jej identifierze i wykonuje kod zawarty w body
+                            <img src="function execution.svg">
+                        </li>
+
+                        <li>
+                            <xmp>parameters</xmp> - zawarte w nawiasie <xmp>( )</xmp> funkcji dane, które muszą zostać wprowadzone, aby funkcja miała co przetwarzać, placeholder dla inputu użytkownika
+                            <img src="parameters.png">
+                            <br><xmp class="ex">zachowują się jak zmienne</xmp>
+
+                        </li>
+
+                        <li>
+                            <xmp>arguments</xmp> - gotowe do użycia parametry, podawane nie przy tworzeniu funkcji, a przy jej wywoływaniu
+                            <br><xmp class="ex">mogą być wartościami liczbowymi albo zmiennymi podanymi z nazwy</xmp>
+                            <br><xmp class="ex">ważna jest kolejność podawania danych</xmp> - jest związana z kolejnościa zadeklarowania parametrów
+                            <br><img src="argument-values.png">
+                            <br><img src="argument-variables.png" alt="">
+                            <br><img src="cole.png">
+                        </li>
+
+                        <li>
+                            <xmp>default parameters</xmp> - nowa funkcjonalność, pozwalajaca na zadeklarowanie domyslnej wartości parametru na wypadek, gdyby nie została ona podana przy callu funkcji
+                            <img src="default-parameter.png" alt="">
+                            <xmp class="full"> function greeting (name = 'Stranger')   { }</xmp> - podaje wartość 'Stranger' na wypadek, gdyby uzytkownik nie był zalogowany i nie miał nicka
+                            
+                        </li>
+
+                        <li>
+                            <xmp>return</xmp> - keyword pozwalający na wyciągniecie wartości z funkcji i dalsze jej przetwarzanie, w ten sposób deklarujemy która wartość jest dla nas najważniejsza i jaki powinien być główny cel działania funkcji
+                            <img src="return.png" alt="">
+                            <br><img src="return2.png" alt="">
+                            <br><xmp class="ex">jeśli jakiś return zostanie użyty</xmp> - a jest ich więcej niż jeden, to zatrzymane zostanie wykonywanie dalszej części kodu funkcji, jeśli nie, to kod idzie dalej
+                            <img src="return-ex.png" alt="">
+                            <br><img src="return-ex2.png" alt="">
+                        </li>
+
+                        <li>
+                            <xmp>helper functions</xmp> - funkcja w funkcji, którą przywołujemy, w celu rozbicia większych operacji na mniejsze, łatwiej zrozumiałe i możliwe do podzielenia
+                           
+                            <img src="helper3.png" alt="">
+                            <br><xmp class="ex">Kolejność:</xmp> 1. Konsola prosi o zmienną fahrenheitResult. 2. Zmienna jest przypisana do funkcji, a więc ją wywołuje z argumentem równym 15. 3. Funkcja returnuje wartośc innej funkcji plus 32, a żeby dodać coś do 32, to musimy to najpierw obliczyć, więc uruchamiamy następną funkcję, przekazując jej ten sam argument 15. 4.Druga funnkcja zwraca pierwszej wartość pomnożonego argumentu i wracamy do pierwszej funkcji. 5. Dodajemy 32 do wartości pierwszej funkcji i otrzymujemy wynik. 6. Wynik jest przekazany do zmiennej i potem do konsoli dając ostateczny odczyt.
+                            <br><img src="helper2.png" alt="">
+                        </li>
+
+                        <li>
+                            <xmp>function expressions</xmp> - nie posiadająca nazwy, funkcja wpisana w zmienną, opisana po deklaracji zmiennej i jej znaku równości, w praktyce rzadko używane
+                            <img src="expression.png" alt="">
+                            <br><xmp class="ex">variableName(argument1, argument2)</xmp> - aby przywołać funkcję, podajemy nazwę zmiennej i w nawiasie podajemy argumenty, tak jak w zwykłej funkcji
+                            <br><xmp class="full">NOT HOISTED</xmp> - jeśli tworzymy funkcję w ten sposób, to nie możemy jej przywoływac przed tym, jak pojawi się w kodzie, trzeba się trzymać kolejności
+                        </li>
+
+                        <li>
+                            <xmp>arrow functions</xmp> - nowość, szybsza metoda zapisu funkcji za pomocą nawiasu z parametrami i  strzałek <xmp>(  ) => {   }</xmp>, nie trzeba podawać keyworda <xmp class="ex">function</xmp>, reszta bez zmian
+                            <img src="arrow.png" alt="">
+                        </li>
+
+                        <li>
+                            <xmp>Concise Body Arrow Functions</xmp> - skrótowa do granic metoda zapisu funkcji
+
+                            <br><br><img src="concise.png" alt="">
+                            <xmp class="ex">jeden parametr</xmp> - wtedy możemy nie umieszczać go w nawiasach, a tylko podać jego nazwę <xmp class="full"> parametr => { };</xmp>
+                            <br><br><img src="concise2.png" alt="">
+                            <xmp class="ex">jeden wiersz body</xmp> - wtedy możemy nie umieszczać go w nawiasach <xmp class="full">{ }</xmp>, a tylko napisać kod
+                            <br><xmp class="ex">implicit return</xmp> -  kiedy mamy tylko jeden wiersz body, możemy pominąć keyword <xmp class="full">return</xmp>, zwrócona zostanie cała zawartość kodu z tego jednego wiersza
+                            <br><br><img src="concise3.png" alt="">
+
+                            <br><img src="concise5.png" alt="">
+                            <br><img src="concise4.png" alt="">
+                        </li>
+
+                    </ul>
+                </p>
+            </section>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">Scope</h2>
+                <p class="data">23.06.2021</p>
+                <p class="tag">#js</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+
+                        <li>
+                            <xmp>block</xmp> - część kodu zawarta w nawiasach <xmp>{   }</xmp>, może to być body funkcji, kod ifa itd...
+                        </li>
+
+                        <li>
+                            <xmp>scope</xmp> - idea programowania, mówiące o tym, że niektóre zmienne są dostępne lub niedostępne w danych częściach kodu
+                        </li>
+
+                        <li>
+                            <xmp>global scope</xmp> - w tym ujęciu zmienne są deklarowane poza blokami kodu, sa uznawane za <xmp>global variables</xmp>, dostępne dla wszystkich funkcji programu równocześnie
+                            <img src="globalscope.png" alt="">
+                        </li>
+
+                        <li>
+                            <xmp>block scope</xmp> - kiedy zmienna zadeklarowana jest wewnątrz bloku i dostępna jest tylko dla elementów wewnątrz tego samego bloku, zmienna taka nazywa się <xmp>local variable</xmp> i ma block scope
+                            <img src="blockscope.png" alt="">
+                            <br><xmp class="ex">reference error</xmp> - pojawia się kiedy zmienna block scope jest użyta poza jej blokiem
+                            <br><xmp class="ex">Zalety użycia block scope:</xmp>
+                            <br><xmp class="full">- kod jest bardziej czytelny, podzielony na ładne sekcje</xmp>
+                            <br><xmp class="full">- łatwiej jest zrozumieć kod, bo zmienne są zapisane w miejscu, w którym ich używamy, a nie trzeba czytac całego kodu linijka po linijce </xmp>
+                            <br><xmp class="full">- oszczędza pamięć programu</xmp>
+                            <br><xmp class="full">- ogranicza pollution i ryzyko błędu</xmp>
+                            <br><xmp class="full">- jeśli zmienna jest zawarta w bloku funkcji i ta funkcja nie zostanie wywołana, to zmienna nie będzie dostępna w global scopie</xmp> - reference error
+                            
+                        </li>
+
+                        <li>
+                            <xmp>scope pollution</xmp> - ma miejsce, gdy zbyt wiele zmiennych jest globalnych i obciąża pamięć programu, może prowadzić do nieprzewidzianych błędów i konfliktów
+                            <br><xmp>global namespace</xmp> - miejsce w kodzie, zawierające globlanie dostępne informacje
+                            <img src="pollution.png" alt="">
+                            <br><xmp class="ex">W tym przykładzie: </xmp> - zadeklarowano globalną zmienną num, chcąc zadeklarować drugą zmienną w funkcji, zapomniano o keywordzie let i powielono nazwę zmiennej num, w efekcie po wywołaniu funkcji, zmienna dostaje nową wartość, chociaż nie taki był zamysł
+                            <br><xmp class="full">Nie powinno się używać zmiennych w global scope</xmp>
+                            <br><xmp class="full">If a variable does not need to exist outside a block— it shouldn’t!</xmp>
+                            
+                        </li>
+
+                    </ul>
+                </p>
+            </section>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">Arrays</h2>
+                <p class="data">09.07.2021</p>
+                <p class="tag">#js</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+
+                        <LI>
+                            <xmp>array</xmp> - javascriptowy sposób tworzenia list, szeregu wyrażeń, może zawierać różne typy danych, każdy kolejny wpis na swój numer i miejsce, arraye możdmy zapisywac do zmiennych
+                            <br><xmp class="ex">let concepts = ['creating arrays', 'array structures', 'array manipulation']</xmp>
+                            <img src="array.png" alt="">
+                        </LI>
+
+                        <li>
+                            <xmp>accessing elements</xmp> - elementy, czyli poszczególne pozycje szeregu, są numerowane od 0, czyli pierwszy element ma index 0, drugi index 1, aby wywołać dany element, podajemy nazwę szeregu, a obok w nawiasie kwadratowym jego numer
+                            <br><xmp class="ex">concepts[0]</xmp> - przywoła pierwszy element szeregu 'concepts'
+                            <br><xmp>index</xmp> - miejsce elementu w szeregu
+                            <img src="indexarray.png" alt="">
+                            <br><xmp class="full">index liter w stringu</xmp> - możemy równiez uzyskac dostęp do danego numeru znaku w stringu, a nie w arrayu
+                            <img src="indexliter.png" alt="">
+                        
+                        </li>
+
+                        <li>
+                            <xmp>update elements</xmp> - podobnie jak wartości zmiennych, tak możemy zmieniać wartości elementów w arrayach po ich wcześniejszym wywołaniu
+                            <img src="updatearray.png" alt="">
+                            <xmp class="ex">array przypisany do zmiennej z let</xmp> - można zmieniać ilośc i treść elementów
+                            <br><xmp class="ex">array przypisany do zmiennej z const</xmp> - można zmienić jedynie treść
+
+                        </li>
+
+                        <li>
+                            <xmp>.length</xmp> - property, pozwala sprawadzać długość, ilość elementów w arrayu
+                            <img src="lengtharray.png" alt="">
+                        </li>
+
+                        <li>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#">Methodsy dla arrayów, spis Mozilla</a>
+                            <br><xmp>methodsy można po prostu używać i potem wczytywac ich wynik, nie trzeba ich przypisywac do nowej zmiennej</xmp>
+                            <br> <img src="metods.png" alt="">
+                        </li>
+
+                        <li>
+                            <xmp>.push()</xmp> - method, pozwalający dodawać elementy na końcu arraya, nie ważne czy został zadeklarowany let czy const
+                            <img src="push.png" alt="">
+                        </li>
+
+                        <li>
+                            <xmp>.pop()</xmp> - method, pozwalający na usunięcie ostatniego elementu arraya i zapisanie go w innym miejscu, takie wycinanie, przeciwieństwo <xmp>.push()</xmp>
+                            <img src="pop.png" alt="">
+                        </li>
+
+                        <li>
+                            <xmp>.join()</xmp> - method, pozwala na wczytanie wszystkich elementów arraya i przypisanie ich do zmiennej, elementy te tworzą jeden string, a oddzielone są od siebie tym, co wpiszemy jako argument funkcji w nawiasie
+                            <br><xmp class="ex">.join(separator)</xmp>
+                            <img src="join.png" alt="">
+                            <br><img src="joinex.png" alt=""> - pozwala po prostu wpisać wszystko i wyświetlić jako czysty tekst bez ramek
+                        </li>
+
+                        <li>
+                            <xmp>.slice()</xmp> - method, pozwalający na wycięcie części arraya i utworzenie z niego innego arraya, przy czym stary array nie zostaje zmieniony
+                            <br><xmp class="ex">.slice(begin, end)</xmp> - należy okreslić indeksowy początek i koniec wycinanego fragmentu
+                            <br><xmp class="full">begin</xmp> - liczone od zera, jeśli jest liczbą ujemną, to pokazuje, na której pozycji od końca arraya ma zostac ustanowiony początek
+                            <br><xmp class="full">end</xmp> - wskazuje element, PRZED KTÓRYM ma zostac zakończony wycinany fragment, jeśli jest pominięty, to .slice() wydobywa wszystkie elementy do końca arraya, a jesli jest ujemny, to podobnie jak w przypadku begina, wskazuje na którym elemencie od końca ma zostać zakończone wycinanie
+                            <br><xmp class="ex">.slice(1,4)</xmp> - wycina elementy od drugiego do czwartego, o indeksach 1, 2 i 3
+                        </li>
+
+                        <li>
+                            <xmp>.splice()</xmp> - method, pozwalający na wycinanie i jednoczesne zastępowanie elementu innym, lub tylko wycinanie lub tylko dodawanie, jest to method wielofunkcyjny
+                            <br><xmp class="full">.splice(start, deleteCount, 'item1', 'item2'</xmp> - start to początkowy indeks działania methoda, deleteCount pokazuje ile elementów ma zostac usuniętych, a następnie wymienione sa elementy do wstawienia w tym miejscu. 
+                            <br><xmp class="ex">.splice(2, 0, "bęben");</xmp> - rozpoczyna wycinanie od drugiego indeksu, czyli trzeciego elementu, nie wycina go jednak, a dodaje przed nim element 'bęben'
+                            <br><xmp class="ex">.splice(3, 1)</xmp> - usuwa jeden element, znajdujący się na indeksie 3, a więc czwarty
+                            <br><xmp class="ex">.splice(0, 2, "papuga", "zawilec", "niebieski")</xmp> - usuwa dwa pierwsze elementy i w ich miejsce na początku dodaje trzy wymienione
+                            <img src="splice.png" alt="">
+                    
+                        </li>
+
+                        <li>
+                            <xmp>.shift()</xmp> - method,  wycina pierwszy element arraya i zapisuje go w nowym miejscu - to jest zwracana wartość
+                            <img src="shift.png" alt="">
+                        </li>
+
+                        <li>
+                            <xmp>.unshift()</xmp> - method, dodaje element lub wiele elementów na początku arraya i zwraca nową jego długość
+                            <br><xmp class="full">.unshift(element, element)</xmp> - w nawiasie podane są kolejno dodawane elementy
+                            <img src="unshift.png" alt="">
+                        </li>
+
+                        <li>
+                            <xmp>.concat()</xmp> - method, pozwala na połączenie dwóch lub więcej arrayów i zwraca go jako jeden nowy, nie zmieniając zawartości starych, ani ich nie kasując
+                            <br><xmp class="full">array.concat(array2, array3)</xmp> - bierze pierwszy array i dodaje do niego dwa następne
+                            <img src="concat.png" alt="">
+                        </li>
+
+                        <li>
+                            <xmp>.indexOf()</xmp> - zwraca numer indeksu dla podanego w nawiasie elementu, jeśli nic nie pasuje do wpisanej nazwy, to zwracana jest wartośc -1
+                            <img src="indexof.png" alt="">
+                        </li>
+
+                        <li>
+                            <xmp>arrays & functions</xmp> - kiedy array jest ukryty wewnatrz funkcji i zostaje on zmieniony, przy uzyciu methoda lub innego sposobu, to będzie to miało swoje odzwierciedlenie równiez poza tą funkcją już po jej wywołaniu
+
+                            <img src="arrayfunk.png" alt="">
+                            <br><xmp class="ex">Co tu sie dzieje? </xmp> 1. Ustanawiamy array flowers. 2. Funkcja przyjmująca jako argumenty arraye, zmienia te arraye, dodając do nich element 'lilly' 3. Funkcja zostaje przywołana dla arraya flowers. 4. Zawartośc arraya uległa zmianie.
+                        </li>
+
+                        <li>
+                            <xmp>nested arrays</xmp> - array wewnątrz innego arraya
+                            <img src="nestedar.png" alt="">
+                        </li>
+
+                    </ul>
+                </p>
+            </section>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">Loops</h2>
+                <p class="data">16.07.2021</p>
+                <p class="tag">#js</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+
+                        <li>
+                            <xmp>loop</xmp> - narzędzie, wykonujące zestaw instrukcji ponownie, aż do uzyskania założonego celu, przydatne przy dużej skali i wielu powtórzeniach tej samej czynności
+                            <br><xmp>iterate</xmp> - repeat, powtarzać
+                            <img src="loop.svg" alt="">
+                        </li>
+
+                        <li>
+                            <xmp>for</xmp> - rodzaj loopa
+                            <br><xmp>iterator variable</xmp> - zmienna wewnątrz loopa for, w której znajduje sie warunek do spelnienia kończący pracę 
+                            <br><img src="forloop.png" alt="">
+                            <br><xmp class="ex">W tym przykładzie:</xmp>
+                            <br><xmp class="full">let counter = 0</xmp> - iterator variable, initialization, określa początkową wartość zmiennej
+                            <br><xmp class="full">counter < 4</xmp> - stopping condition - określa warunek, który przestając być spełniany i dając wartośc false, loop przestaje działać
+                            <br><xmp class="full">counter++</xmp> - iteration statement -  okresla jak zmienia się zmienna przy każdym odtworzeniu pętli
+                        </li>
+
+                        <li>
+                            <xmp>reverse loop</xmp> - aby wykonywac loop w odwróconej kolejności i np, odliczać od 100 do 0, należy zmienić warunki, czyli iterator variable ustawić na najwyższą wartość, iteration statement na odejmowanie oraz zmodyfikować stopping condition
+                            <img src="reverseloop.png" alt=""> 
+                            <br><xmp class="ex">W przykładzie poniżej:</xmp> Stworzyliśmy funkcję, która bierze za argument jakiś array i odwraca w nim kolejnośc elementów. To samo można zrobić methodem .reverse()
+                            <br><img src="reverseloopp.png" alt="">
+                            <br><img src="reverseloop3.png" alt="">
+                        </li>
+
+                        <li>
+                            <xmp>looping through arrays</xmp> - powiązanie jednego z drugim, przy pomocy array.length do określenia stopping condition loopa
+                            <img src="looparray.png" alt="">
+                            <br><xmp class="ex">W przykładzie powyżej:</xmp> 1. Nadajemu nazwę 'i' dla iterator variable. 2. Stopping condition sprawdza, czy 'i' jest mniejsze od długości arraya (animals.length) - mniejsze, bo indeksy elementów arraya, są mniejsze o jeden niż jego długość 3. Konsola loguje kolejne wartości arraya w oparciu o zwiększaną o 1 wartość zmiennej 'i', będącej indexem dla kolejnych elementów arraya
+                        </li>
+                        
+                        <li>
+                            <xmp>nested loops</xmp> - loop działający wewnątrz innego loopa, używane np do porównywania elementów w dwóch arrayach, dla każdej rundy zewnetrznego loopa, ten wewnetrzny musi działać az do końca, a nie na przemian raz ten raz ten
+                            <img src="nested loop.png" alt="">
+                            <br><img src="nestedprzyklad.png" alt="">
+                            <xmp class="ex">W przykładzie powyżej: </xmp> 1. Okreslamy dwa arraye oraz jeden pusty array zbiorczy. 2.Ustanawiamy loopa zewnetrznego, sprawdzajacego dane dla wiekszego arraya. 3.Wewnątrz tego loopa ustanawiamy drugiego loopa, który dla wszystkich elementów z drugiego loopa, sprawdza czy arraye mają jakieś elementy wspólne. 4. Jesli te elementy są wspólne, to zostają przeniesione do arraya zbiorczego (mutualFollowers) 5. Wyniki są logowane w konsoli.
+                            <br><a href="https://discuss.codecademy.com/t/why-do-the-loops-work-how-do-they-ever-match/431213/15">Jak to jest zrobione?</a>
+                        </li>
+
+                        <li>
+                            <xmp>while loop</xmp> - inny rodzaj loopa, używany głównie wtedy, gdy nie wiemy na starcie ile powtórzeń będzie koniecznych do wykonania zadania
+                            <img src="whileloop.png" alt="">
+                            <xmp class="ex">Różnice:</xmp>
+                            <br>- zmienna deklarowana jest przed loopem w global scope i jest dostępna wszędzie
+                            <br>- zaczynamy od keyworda i za nim jest stopping condition - jak daje wartość false, loop przestaje powtarzać swoje działanie
+                            <br>- potem następuje blok kodu i iteration statement
+                        </li>
+
+                        <li>
+                            <xmp>infinite loop</xmp> - unikać jak ognia! - przypadek, w którym nie podajemy iteration statement lub stopping condition będzie błędny i loop ma ciągle jedną wartośc do przerobienia, co powoduje, ze działa w nieskończonośc i potencjalnie zawiesza procesor
+                        </li>
+
+                        <li>
+                            <xmp>do...while</xmp> - statement, modyfikujący nieco while loop, wymusza on uruchomienie kodu przynajmniej raz i potem warunkowe uruchamianie go w zalezności od tego, czy stopping condition zostanie spełniony czy nie
+                            <img src="dowhile.png" alt="">
+                            <br>
+                            <img src="dowhile2.png" alt="">
+                        </li>
+
+                        <li>
+                            <xmp>break</xmp> - keyword - dodatkowa furtka do zakończenia loopa przed spełnieniem jego stopping condition, przy założeniu ze wcześniej zostanie spełniony jakiś warunek, o który nam chodziło i który musimy podać w wartości <xmp>if</xmp>, jest to szczegolnie użyteczne, gdy przekopujemy się przez duże ilości danych
+                            <img src="break.png" alt="">
+                        </li>
+
+                        <li>
+                            <xmp>for ... of loop</xmp> - łatwiejszy, czystszy i mniej błędogenny for loop, ograniczający jednak możliwośc pracy na konkretnych elementach arraya, odliczanie od tyłu i wszystkie zaawansowane operacje na warunkach loopa, countera, stopping condition itd.
+                            <br><a href="https://www.codecademy.com/paths/front-end-engineer-career-path/tracks/fecp-javascript-syntax-part-ii/modules/fecp-learn-javascript-syntax-loops/articles/javascript-the-for-of-loop">Artykuł na Codecademy</a>
+                            <img src="forof.png" alt="">
+                            <br><xmp class="ex">Z arrayem: </xmp>
+                            <br><img src="forof2.png" alt="">
+                            <br><xmp class="full">W przykładzie powyżej: </xmp>1. Bierzemy array nazwany 'fruits'. 2. Ustanawiamy for loopa łączącego się z arrayem fruits - w nawiasie pada jego nazwa. 3. W nawiasie pada również operator zmiennej(const, let lub var) i nazwa tworzonej nowej zmiennej, w tym wypadku 'fruit'. 4. Loop pracuje już teraz sam, logując po jednym argumencie z arraya zaczynając od pierwszego i kończąc na ostatnim. 5. Profit
+                            <br><xmp class="ex">Ze stringiem: </xmp> - loguje kolejne znaki stringu
+                            <br><img src="forof3.png" alt="">
+                            <br><xmp class="ex">Break: </xmp> - jego użycie tak jak wczesniej kończy działanie loopa przy wykryciu danego wymaganego założenia
+                            <br><img src="forofbreak.png" alt="">
+                            <br><xmp class="ex">Continue: </xmp> - operator, pozwalający na pominięcie jednego elementu i dalsze kontynuowanie loopa, podobne do <xmp>break</xmp>
+                            <br><img src="forofcontinue.png" alt="">
+                        </li>
+
+                        <li>
+                            <xmp>Aby połączyć kolejne znaki stringa z arraya, należy poddać go działaniu następującego loopa</xmp>
+                            <br><xmp class="ex">console.log(myArray.join('').toUpperCase());</xmp>
+                        </li>
+
+                    </ul>
+                </p>
+            </section>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">Objects</h2>
+                <p class="data">18.08.2021</p>
+                <p class="tag">#js</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+
+                        <li>
+                            <xmp>object</xmp> - siódmy, podstawowy typ danych w javascript, posiadający cechy i pozwalający modelować bardziej złożone struktury
+                            <br><xmp class="ex">object literal</xmp> - przypisana do zmiennej struktura zapisu obiektu w nawiasach {}
+                            <br><xmp class="full">let zmienna = {} </xmp>
+                            <br><xmp class="ex">key</xmp> - nazwa cechy zmiennej, może być to pojedyncze słowo lub string ze spacją, wtedy zapisujemy go w cudzysłowie ' '
+                            <br><xmp class="ex">value</xmp> - wartość cechy połączona z keyem, rozdzielona od niego dwukropkiem, może to być dowolny typ danych, łącznie z liczbami, stringami, booleanami, funkcjami lub innymi obiektami
+                            <br><xmp class="ex">property</xmp> - cecha, para key+value, oddzielona od kolejnej property przecinkiem
+                            <br><img src="object1.png" alt="">
+                        </li>
+
+                        <li>
+                            <xmp>accessing properties</xmp>
+                            <br><xmp class="ex">dot notation</xmp> - polega na podaniu nazwy obiektu, a po kropce nazwy jego cechy (key), zwraca value tej cechy
+                            <img src="dotnot.png" alt="">
+                            <br><img src="dotnot2.png" alt="">
+                            <br><xmp class="ex">bracket notation</xmp> - używane, gdy key zawiera spacje, cyfry, znaki specjalne, inaczej kod zwróci error
+                            <img src="bracketnot.png" alt="">
+                            <br><img src="bracketnot2.png" alt="">
+                            <br><xmp class="full">bracket notation z funkcjami</xmp> -  notacja ta umożliwia wykorzystywanie parametrów funkcji w zapisie, tak aby program wiedział o jaka wartość chodzi
+                            <img src="bracketnot3.png" alt="">
+                            <br><xmp class="full">nazwa zmiennej w nawiasie</xmp> - możliwe jest też podanie nazwy zmiennej w nawiasie, gdzie powinien być podany key cechy, wtedy jeśli ta zmienna zawiera nazwę keya, wszystko działa
+                            <img src="bracketnot4.png" alt="">
+
+                    
+                        </li>
+
+                        <li>
+                            <xmp>property assignment</xmp> - umożliwia zmianę wartości cech lub dodawanie i usuwanie całych cech, wewnątrz już stworzonego objektu
+                            <img src="propac.png" alt="">
+                            <br><xmp class="ex">const object</xmp> - jeśli zadeklarujemy objekt keywordem const zamiast let, wtedy nadal możemy mutować wartości cech w podany sposób
+                            <img src="constobject.png" alt="">
+                            <br><xmp class="ex">delete</xmp> - aby usunąć jakąś cechę, dodajemy na poczatku keyword 'delete'
+                            <img src="deleteprop.png" alt="">
+                        </li>
+
+                        <li>
+                            <xmp>methods</xmp> - kiedy w obiekcie mamy funkcję zamiast właściwkości cechy, mówimy o methodsie, cecha opisuje sam obiekt, a method mówi co ten obiekt robi
+                            <br><xmp class="ex">Aby go utworzyć: </xmp> - 1. Zostawiamy key, który będzie nazwą dla methoda 2. Podajemy keyword 'function'. 3. Następnie piszemy blok kodu funkcji tak jak zwykle i gotowe. 
+                            <img src="objmethod.png" alt="">
+                            <br><xmp class="ex">W ES6 uproszczono zapis:</xmp> -  nie trzeba zapisywać dwukropka po keyu i keyworda 'function', reszta pozostaje bez zmian
+                            <img src="objmethod2.png" alt="">
+                            <br><xmp class="ex">Aby go wywołać:</xmp>Podajemy nazwę obiektu i po kropce nazwę methoda, na końcu dodajemy nawiasy ()
+                            <img src="objmethod3.png" alt="">
+                            <br><xmp>WAŻNE!</xmp> - methodsy oddzielamy przecinkiem, tak jak zwykłe cechy
+                        </li>
+
+                        <li>
+                            <xmp>nested objects</xmp> - obiekt zagnieżdżony w obiekcie, kolejny obiekt zapisuje sie jednak inaczej, bo zamiast znaku równości jest dwukropek, tak jakby ten obiekt był property z keyem jako nazwą
+                            <img src="objnested.png" alt="">
+                            <br><xmp class="ex">Accessing</xmp> - w zasadzie bez zmian, tylko lista podpunktów się wydłuża
+                            <img src="accesnested.png" alt="">
+                            <br><xmp class="ex">Zanestowany array obiektów</xmp> - tutaj składnia jest nieco inna i te obiekty nie potrzebują nazw keyowych, bo sa accesowane na podstawie indeksu
+                            <img src="arraynest.png" alt="">
+                        </li>
+
+                        <li>
+                            <xmp>pass by reference</xmp> - ponownie jak przy methodsach, możemy mutować property obiektów przez działanie funkcji, ale jeśli ta funkcja zawiera polecenie całkowitej zmiany i nowego zadeklarowania tego obiektu, to efekt będzie widoczny tylko wewnątrz funkcji, a nie utrzyma się globalnie. Nawet jesli obiekt będzie zadeklarowany keywordem <xmp class="ex">let!</xmp> Jeśli jednak funkcja będzie tylko mutowała pojedyncze property, to efekt zostanie zapisany globalnie.
+                            <br><xmp class="ex">To jest ok:</xmp>
+                            <img src="passfunkcja.png" alt="">
+                            <br><xmp class="ex">To nie zadziała:</xmp>
+                            <img src="wrongfunkcja.png" alt="">
+                        </li>
+
+                        <li>
+                            <xmp>Looping through objects</xmp> - 
+                            <br><xmp>for...in</xmp> - rodzaj loopa używanego przy obiektach
+                            <img src="forin.png" alt="">
+                            <xmp class="ex">W przykładzie powyżej:</xmp> Loop jest użyty aby wyświetlić najpierw obiekty w obiekcie 'crew', a więc nazwy stanowisk, a nastepnie przypisane im imiona konkretnych załogantów
+                            <br><xmp class="ex">Przykład z quizu:</xmp>
+                            <img src="forkey.png" alt="">
+                        </li>
+
+                    </ul>
+                </p>
+            </section>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">Advanced objects</h2>
+                <p class="data">24.08.2021</p>
+                <p class="tag">#js</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+
+                        <li>
+                            <xmp>this</xmp> - keyword, (internal property) pozwalający na używanie wszystkich danych z obiektu w methodsie będącym częścią składową tego samego obiektu, w innym wypadku dodatjemy reference error
+                            <br><xmp class="full">The object that a method belongs to is called the calling object. The this keyword refers the calling object and can be used to access properties of the calling object.</xmp>
+                            <br><xmp class="ex">To nie zadziała:</xmp>
+                            <img src="thisok.png" alt="">
+
+                            <br><xmp class="ex">To zadziała:</xmp>
+                            <img src="thisokk.png" alt="">
+
+                            <br><img src="thisex.png" alt="">
+                        </li>
+
+                        <li>
+                            <xmp>arrow functions i this</xmp> - nie używać razem, bo nie będzie działało, problem ze scopami i nie mają dostepu do danych
+                            <img src="thisarrow.png" alt="">
+                        </li>
+
+                        <li>
+                            <xmp>privacy</xmp> - w javascript nie ma wbudowanego zabezpieczenia przed dostępem i zmianą części obiektów, do których tego dostępu być nie powinno, trzeba więc kombinować, aby dawać znac innym deweloperom, jaka część kodu nie powinna być zmieniana
+                            <br><xmp class="ex">_property</xmp> - można używac underlina do oznaczania cech, które mają pozostac niezmieniane, ale i tak nie sprawi to, że te cechy nie mogą być mutowane, to tylko sugestia, a nie zabezpieczenie
+                            <img src="underline.png" alt="">
+                        </li>
+
+                        <li>
+                            <xmp>getters</xmp> - method, który przechowuje i returnuje wewnętrzne cechy obiektu (thisy) (internal property), łatwiejsze do przeczytania dla innych deweloperów, poprawia czytelnośc kodu
+                            <img src="getter.png" alt="">
+                            <br><ul><xmp class="ex">W powyższym przykładzie:</xmp>
+                                    <li>Inaczej niż w innych metodsach zapisujemy, podajemy keyword <xmp class="ex">get</xmp>, a potem nazwę funkcji</li>   
+                                    <li>Używamy <xmp class="ex">if...else</xmp> aby sprawdzić, czy obie cechy występują i mają jakąś wartość (truthy value)</li>   
+                                    <li>Thisami uzyskujemy dostęp do internal values</li>  
+                                    <li>W else podajemy wartość wyświetlaną, jeśli któraś cecha byłaby pusta</li>
+                                    <li>na koniec uzyskujemy dostęp do gettera wpisując <xmp class="full">person.fullName</xmp> bez nawiasów, tak jakbyśmy wzywali zwykła cechę</li>
+                            </ul>
+
+                            <xmp class="ex">Przykład z ćwiczenia:</xmp>
+                            <img src="getter2.png" alt="">
+                            <xmp>jeśli wywołujemy getter, nie podajemy przy nim nawiasów(), inaczej program będzie szukał zwykłego methodsa!</xmp>
+                        </li>
+
+
+                        <li>
+                            <xmp>setters</xmp> - method pozwalajacy na zmianę wartości cechy obiektu w którym się znajduje
+                            <img src="setter.png" alt="">
+                            <img src="setter2.png" alt="">
+                            <ul><xmp class="ex">W przykładzie powyżej:</xmp>
+                                
+                                <li>Podobnie jak w getterze zapisujemy, tylko, ze z keywordem <xmp class="ex">set</xmp>, a potem nazwa funkcji, w nawiasie zapisujemy nazwę parametru wpisywanmego do tej funkcji</li>
+                                <li>Za pomocą if...else sprawszamy najpierw czy wartość podanego parametru jest wartością numeryczną, a jeśli tak, to przypisujemy ją do cechy _age</li>
+                                <li>Jesli nie, to w else podajemy wartość stringa z opisem błędu</li>
+                                <li>Aby użyc settera, podajemy nazwę obiektu i tego settera w formacie <xmp class="full">person.age</xmp> a następnie podajemy przypisywaną wartość</li>
+
+                            </ul>
+
+                            <br><xmp class="ex">Przykład z ćwiczenia:</xmp>
+                            <img src="setter3.png" alt="">
+                        </li>
+
+                        <li>
+                            <xmp>Factory functions</xmp> - funkcje pozwalające na tworzenie wielu obiektów w prosty sposób
+                            <img src="factory.png" alt="">
+                            <img src="factory2.png" alt="">
+                            <br><xmp class="ex">Wy przykładzie powyżej:</xmp> -  tworzymy zmienną do której przypisujemy funkcję, podając najpierw jej parametry, potem body code z returnem, a pod returnem podajemy szkielet budowy dla nowych obiektów wraz z cechami połączonymi z nazwami parametrów funkcji
+                            <br><xmp class="full">Aby użyć funkcji:</xmp> - przypisujemy ją do nowo tworzonej zmiennej, która da nazwę dla obiektu, cechy tego obiektu podajemy w nawiasie funkcji
+                            <br><xmp class="ex">Przykład z ćwiczenia:</xmp>
+                            <img src="factory3.png" alt="">
+                        </li>
+
+                        <li>
+                            <xmp>property value shorthand</xmp> - destructuring - skrócona forma zapisu factory function, nie wymagajaca powtarzania parametrów przy nazwach cech
+                            <img src="factorysh.png" alt="">
+                            <img src="factorysh2.png" alt="">
+                        </li> 
+
+                        <li>
+                            <xmp>destructured assignment</xmp> - metoda na przekształcenie pary key-value w samodzielną zmienną
+                            <br><xmp class="ex">Zwykła metoda:</xmp>
+                            <img src="desnormal.png" alt="">
+
+                            <br><xmp class="ex">Destructured assignment:</xmp> - nazwę zmiennej, która pokrywa się w nazwą cechy obiektu, wstawiamy w nawias { } i pwtedy wystarczy przypisac jej obiekt, w kótrym znajduje się taka cecha
+                            <img src="desassign.png" alt="">
+
+                            <br><xmp class="ex">Nested object:</xmp> - w podobny sposób możemy uzyskiwac dostęp do zanestowanych obiektów wewnątrz innego obiektu, tylko wtedy podajemy kolejną gałąź z nazwą po znaku równości
+
+                            <img src="desnested.png" alt="">
+
+                            <br><xmp class="ex">Użycie methodsów:</xmp> - w utworzonej zmiennej możemy używac methodsów pochodzących z obiektów
+                            <img src="desmethod.png" alt="">
+                        </li>
+
+                        <li>
+                            <xmp>built-in object methods</xmp> - wbudowane w javascript, gotowe do uzycia methodsy
+                            
+                            <br><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#Methods">MDN objects</a>
+                            <br><xmp class="ex">Object.keys(object)</xmp> - po przypisaniu do nowej zmiennej, ustanawia w niej array z nazwami keyów cech obiektu
+                            <br><xmp class="ex">Object.entries(object)</xmp> - przypisany do zmiennej daje array z kayem i value danych cech obiektu
+                            <br><xmp class="ex">Object.assign(target, source)</xmp> - przekopiowuje, dodaje lub nadpisuje cechy (key+value) z obiektu source do obiektu target
+                            <br><xmp class="full">Przykłady z ćwiczenia:</xmp>
+                            <img src="builtmethods.png" alt="">
+                            <img src="builtmethods2.png" alt="">
+                        </li>
+
+                        <li>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Objects MDN</a>
+                            
+                        </li>
+
+                    </ul>
+                </p>
+            </section>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">High-order functions</h2>
+                <p class="data">07.02.2022</p>
+                <p class="tag">#js</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+                        <li>
+                        <xmp>Higher-order functions</xmp> - funkcje przyjmujace inne funkcje jako argumenty i wydające funkcje jako wynik ich działania, pozwalają na tworzenie bardziej logicznych, łatwych do zrozumienia powiązań między poszczególnymi działaniami
+                        <br><br>
+                        Możemy używac ich do skracania długich nazw funkcji aby zachowac czytelność:
+                        <br><img src="higher1.png">
+                        Może być zamienione na to:
+                        <br><img src="higher2.png">
+                        <br><xmp class="ex">WAŻNE: </xmp>funkcję po znaku równości przypisaliśmy do zmiennej/funkcji bez nawiasów, bo chcemy przypisać samą treść funkcji, a nie wynik, który ona finalnie daje
+                        <br><xmp class="full">Aby sprawdzić jaka funkcja pierwotnie kryje się za nowa funckją, mozemy logować ją do konsoli z dopiskiem '.name'</xmp>
+                        <br><xmp class="ex">console.log(busy.name)</xmp>
+                        </li>
+
+                        <li>
+                            <xmp>Functions as parameters</xmp> - callback function - funkcje tak jak wszystkie inne obiekty w javascript mogą być użyte jako parametry innych funkcji
+                            <br><xmp class="ex">WAŻNE: </xmp> funkcje w takim przypadku podajemy bez nawiasów, tak aby zawrzeć formułę funkcji, a nie jej wynik
+                            <img src="funpar.png"> W tym przykładzie funkcja bierze za argument inną funkcje i podając czas początkowy, sprawdza ile czasu upłynie przy wykonaniu obliczeń tej drugiej funkcji
+                        </li>
+
+                        
+                    </ul>
+                </p>
+            </section>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">Iterators</h2>
+                <p class="data">07.02.2022</p>
+                <p class="tag">#js</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+
+                        <li>
+                            <xmp>Iterators</xmp> - iteration methods - wbudowane javascriptowe methodsy do obsługi arrayów, pozwalają przeszukiwac wiele elementów arraya i wyciągac z niego interesujące nas informacje
+
+                        </li>
+
+                        <li>
+                            <xmp style="text-transform: none">.forEach()</xmp> - method, wykonujący ten sam kod, dla każdego elementu arraya, wykonuje go dla elementów, ale nie zmienia ich wartości i zwraca na koniec wartość undefined
+                            <img src="foreach.png" alt="">
+                            <xmp class="ex">Kolejność działania:</xmp> 1. Method używamy na arrayu groceries. Method jako argumentu używa funkcji w nawiasie i używa jej na kazdym elemencie arraya.
+                            <br><xmp class="full">Są trzy mozliwości zapisu tego methoda:</xmp>
+                            <img src="foreachex.png" alt="">
+                            <br><xmp class="full">Pierwsza:</xmp> z użyciem anonimowej funkcji
+                            <br><xmp class="full">Druga:</xmp>podobna, ale z użyciem strzałek w zapisie funkcji
+                            <br><xmp class="full">Trzecia:</xmp> z użyciem funkcji jako argumentu methodsa, po wcześniejszym jej nazwaniu i opisaniu jej kodu
+                        </li>
+
+                        <li>
+                            <xmp style="text-transform: none">.map()</xmp> - method, podobnie jak .forEach() wykonuje ten sam kod dla każdego elementu, ale jego rezultatem jest inny array z wynikami, zamiast pojedynczych wartości wydawanych kolejno
+                            <img src="map.png" alt="">
+                            <xmp class="ex">W przykładzie:</xmp>
+                            <br><xmp class="full">numbers</xmp> to array liczb.
+                            <br><xmp class="full">bigNumbers</xmp> to array wynikowy, w którym składowane będą wyniki działania methoda .map()
+                            <br><xmp class="full">return number * 10</xmp> kod przeliczający każdy element arraya i mnożący go razy 10
+                            <img src="map2.png" alt="">
+
+                            <br><xmp class="ex">Poniżej przykład zastosowania w praktyce:</xmp> - kod podnoszący liczby w arrayu do drugiej potęgi
+                            <br><img src="mappraktyka.png" alt="">
+                            
+                            <br><xmp class="ex">Poniżej przykład zastosowania w praktyce:</xmp> - kod dający capslock na wszystkie stringi i dodający wykrzyknik
+                            <br><img src="mappraktyka2.png" alt="">
+                            
+                        </li>
+
+                        <li><xmp style="text-transform: none">.filter()</xmp> - method, zwracający nowy array, ale filtrujący przerabiane elementy za pomocą funkcji podawanej jako argument methoda, funkcja ta powinna zwracać wartość true lub false, wtedy element true jest uwzględniany w obliczaniu methoda
+                            <img src="filter.png" alt="">
+                            <xmp class="ex">W przykładzie:</xmp>
+                            <br><xmp class="full">words</xmp> array zawierający stringi
+                            <br><xmp class="full">shortWords</xmp> array wynikowy z elementami przerobionymi przez method
+                            <br><xmp class="full">word</xmp> argument funkcji, kolejne stringi z początkowego arraya
+                            <br><xmp class="full">word.length < 6;</xmp> warunek funkcji, którego spełnienie jest wymagane do zaliczenia elementu do nowego arraya, w tym wypadku muszą to być słowa krótsze niż 6 słów
+                            <img src="filter2.png" alt="">
+                            <xmp class="ex">Przykład z ćwiczenia:</xmp>
+                            <img src="filter3.png" alt="">
+
+                        </li> 
+
+                        <li>
+                            <xmp style="text-transform: none">.findIndex()</xmp> - method, który pozwala zwrócić numer indeksu pierwszego elementu arraya, który spełnia okreslone w funkcji warunki
+                            <img src="findindex.png" alt="">
+                            <xmp class="full">lessThanTen</xmp> - zmienna zawierająca wynik działania methoda, czyli numer indeksu elementu spełniającego warunek
+                            <br><xmp class="full">num < 10</xmp> warunek funkcji, pierwszy element, który spełni go dając wartość true, będzie elementem, którego indeks zostanie zwrócony
+                            <img src="findindex2.png" alt="">
+                            <xmp class="ex">Aby sprawdzić co kryje się pod indeksem 3, wpisujemy:</xmp>
+                            <img src="findindex3.png" alt="">
+                            <br><xmp class="ex">Jeśli żaden element nie spełni warunku, to method zwróci wartość </xmp> <xmp>-1</xmp>
+                            <img src="findindex4.png" alt="">
+                        </li>
+
+                        <li>
+                            <xmp style="text-transform: none">.reduce()</xmp> - method, pozwalający na łączenie wszystkich elementów arraya i podawania ich jako jednej połączonej wartości lub zbioru stringów
+                            
+                            <img src="reduce.png" alt="">
+                            <br><xmp class="ex">accumulator, currentValue</xmp> - stałe argumenty tego methoda, pierwszy bierze wartość pierwszego elementu arraya lub wyniku obliczeń poprzedniej iteracji, a drugi dokłada tylko nowe elementy arraya
+                            <img src="reducechart.png" alt="">
+                            <br><xmp class="full">Jeżeli chcemy dodać wartość początkową do dokonywanych obliczeń</xmp>, należy dodać argument do methoda w takim miejscu:
+                            <img src="reduceplus.png" alt="">
+                        </li>
+
+                        <li>
+                            <xmp style="text-transform: none">.some()</xmp> - method, testujący, czy w arrayu jest chociaz jeden element pasujacy do kryterium i jeśli tak, to zwracający wartość true
+                            <img src="some.png">
+                        </li>
+
+                        <li>
+                            <xmp style="text-transform: none">.every()</xmp> - method, sprawdzający, czy wszystkie elementy arraya spełniają kryterium i zwracający wartość true lub false
+                            <img src="every.png" alt="">
+                        </li>
+
+                        <li>
+                            <xmp style="text-transform: none">.split()</xmp> - method, dzielący tekst na pojedyncze elementy poprzez oddzielenie ich od znaków w nawiasie funkcji, najczęściej spacji ' '
+                            <br><xmp class="ex">let storyWord = story.split(' ');</xmp>
+                        </li>
+
+                        <li>
+                            <xmp style="text-transform: none">.join()</xmp> - method odwrotny do split, pozwala łączyć elementy arraya wstawiając pomiędzy nie treść zawartą w nawiasie funkcji, najczęściej spacje ' '
+                        </li>
+
+                        <li>
+                            <xmp style="text-transform: none">.sort()</xmp> - method pozwalający na sortowanie w kolejności alfabetycznej (stringi) i rosnącej (liczby)
+                            <br><xmp class="ex">Aby sortować w odwrotnej kolejności należy do nawiasu dodać:</xmp><xmp class="full"> (function(a, b){return b-a})</xmp>
+                            <br><img src="sort.png" alt="">
+                        </li>
+
+                        <li>
+                            <xmp>Array methods documentation</xmp> - <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Iteration_methods">MDN</a>
+                        </li>
+
+
+
+
+
+                    </ul>
+                </p>
+            </section>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">Terminal</h2>
+                <p class="data">30.05.2022</p>
+                <p class="tag">#js</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+
+                      <li>
+                          <xmp>ls</xmp> - list, wyświetla zawartość danego folderu podając nazwy podfolderów i plików
+                          <br><xmp class="ex">2014  2015  hardware.txt</xmp>
+                      </li>
+
+                      <li>
+                          <xmp>pwd</xmp> - print working directory - wyświetla ścieżkę dostępu do aktualnie wybranego folderu
+                          <br><xmp class="ex">/home/ccuser/workspace/blog</xmp>
+                      </li>
+
+                      <li>
+                          <xmp>cd</xmp> - change directory - przechodzi do wskazanego folderu
+                          <br><xmp class="ex">cd 2015</xmp>
+                          <br><xmp class="ex">cd 2015/memory</xmp> aby przejśc od razu o dwa foldery
+                          <br><xmp class="ex">cd ..</xmp> aby cofnąć się do poprzedniego folderu nadrzędnego
+                          <br><xmp class="ex">cd ../jan</xmp> aby przejść z innego folderu, cofnąć się do nadrzędnego i wybrac inny folder w tej samej linijce
+                          <br><xmp class="ex">cd../..</xmp> aby cofnąć się od razu o dwa foldery
+                      </li>
+
+                      <li>
+                          <xmp>mkdir</xmp> - make directory - pozwala na tworzenie nowych folerów
+                          <br><xmp class="ex">mkdir nazwafolderu</xmp>
+                          <br><xmp class="ex">mkdir media/tv</xmp> - aby stworzyć folder tv wewnątrz folderu podrzędnego media, w którym nie jesteśmy
+
+                      </li>
+
+                      <li>
+                          <xmp>touch</xmp> - pozwala tworzyć nowe pliki
+                          <br><xmp class="ex">touch keyboard.txt</xmp> - tworzy plik o nazwie keyboard.txt
+                      </li>
+
+                      <li>
+                          <xmp>clear</xmp> - czyści terminal
+                      </li>
+
+                      <li>
+                          <xmp>tab</xmp> - wciśnij klawisz, aby dokończyć wpisywanie długiej nazwy automatycznie
+                      </li>
+
+                      <li>
+                          <xmp>cat</xmp> - aby printować zawartość pliku tekstowego
+                      </li>
+
+                    </ul>
+                </p>
+            </section>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">Javascript Browser Console</h2>
+                <p class="data">08.06.2022</p>
+                <p class="tag">#js</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+                        <li>
+                            <xmp>ctrl+shift+j</xmp> - wyświetla console js w google chrome pod windowsem
+                        </li>
+
+                        <li>
+                            <xmp style="text-transform: none">document.body.innerHTML</xmp> - stosowane, aby wpisując do konsoli wyświetlić konstrukcje html obecnej strony, lub by dodawać do instniejącej strony dodatkowe elementy
+                            <br><xmp class="ex">document.body.innerHTML = "<h1>Add a header in console</h1>"</xmp> - doda nam header w aktualnie wyswietlanej stronie                            
+                            <br><img src="consolechange.webp" alt="">
+                        </li>
+
+                        <li>
+                            <xmp>$()</xmp> - zamiennik dla document.querySelector() - pozwalający szybko wybrać element z konsoli wpisując w nawiasie jego nazwę
+                            <br><xmp class="ex">$("body").style.color = "blue"</xmp> - wybierze całe body i jednocześnie nada wszystkim jego czcionkom kolor niebieski
+                            <br><img src="sconsole.webp" alt="">
+                        </li>
+
+                      
+
+                    </ul>
+                </p>
+            </section>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">Runtime Environment</h2>
+                <p class="data">08.06.2022</p>
+                <p class="tag">#js</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+                        <li>
+                            <xmp>runtime environment</xmp> -  miejsce w którym nasz kod zostanie uruchomiony, okresla do jakich zasobów, globalnych obiektów będzie miał dostęp, w różnych środowiskach ten sam kod może działać nieco inaczej lub nie działać
+
+                        </li>
+
+                        <li>
+                            <xmp>window.alert()</xmp> - method środowiska przeglądarkowego, pozwala na wyświetlenie komunikatu w oknie popup w przeglądarce
+                            <br><xmp class="ex">window.alert('Hello World'); </xmp>- wyświetli okienko z napisem Hello World
+                            <br><xmp class="ex">window.prompt()</xmp> - wyświetli okienko z komunikatem i polem do wpisania tekstu
+                            <br><xmp class="ex">window.confirm()</xmp> - działa podobnie do alert, należy potwierdzić okienko klawiszem ok
+                        </li> 
+
+                        <li>
+                            <xmp>front-end applications</xmp> - aplikacje tworzone i uruchamiane w przeglądarce
+                        </li>
+
+                        <li>
+                            <xmp>node runtime environment</xmp> - środowisko stworzone, aby używac kodu js bez użycia przeglądarki, pozwalając na tworzenie aplikacji full-stack (front-end połączony z back-end)
+                        </li>
+
+                      
+
+                    </ul>
+                </p>
+            </section>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">Debugging</h2>
+                <p class="data">14.06.2022</p>
+                <p class="tag">#js</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+                        <li>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors">Lista błędów w terminalu / error list</a>
+                            <br><img src="error.png" alt="">
+                        </li>
+
+                        <li>
+                            <xmp>SyntaxError</xmp> - błąd, wywołany przez literówkę, brak domkniętego nawiasu, użycie nieprawidłowego znaku do oddzielenia, brak średnika, tworzy błędny kod, którego nie może odczytac kompilator
+                        </li>
+
+                        <li>
+                            <xmp>ReferenceError</xmp> - błąd, powodowany przez użycie nieistniejących, niezadeklarowanych zmiennych
+                        </li>
+
+                        <li>
+                            <xmp>TypeError</xmp> - próba wykonania operacji na obiekcie, który nie nadaje sie do tej metody, np. użycie methoda arrayowego na obiekcie albo methoda stringowego na wartości cyfrowej
+                      
+
+                    </ul>
+                </p>
+            </section>
+
+
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">Next</h2>
+                <p class="data">08.06.2021</p>
+                <p class="tag">#js</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+
+                      
+
+                    </ul>
+                </p>
+            </section>
+
+        </main>
+    </body>
+
+</html>

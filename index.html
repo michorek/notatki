@@ -1,0 +1,1814 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Michorowe Notatki</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Notatki <span>Michorowe</span></h1>
+            
+            
+        </header>
+
+        <nav>
+            <ul type="none">
+                <li><a href="javascript.html">Javascript</a></li>
+                <li><a href="index.html">html/css</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">HTML - Elements</h2>
+                <p class="data">19.03.2021</p>
+                <p class="tag">#html </p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+                        <li><xmp><em></em></xmp> - italic </li>
+
+                        <li><xmp><strong></strong></xmp> - bold </li>
+
+                        <li><xmp><video></video></xmp> element embeds a media player for video playback. The src attribute will contain the URL to the video. Adding the controls attribute will display video controls in the media player.
+
+                            Note: The content inside the opening and closing tag is shown as a fallback in browsers that don’t support the element.
+                            <xmp class="full"><video src="myVideo.mp4" width="320" height="240" controls> Video not supported</video></xmp></li>
+                            
+                        <li><xmp><img></xmp> element can have alternative text via the <xmp>alt</xmp> attribute. The alternative text will be displayed if an image fails to render due to an incorrect URL, if the image format is not supported by the browser, if the image is blocked from being displayed, or if the image has not been received from the URL.
+
+                            The text will be read aloud if screen reading software is used and helps support visually impaired users by providing a text descriptor for the image content on a webpage.
+                            <br>
+                        <xmp class="full"><img src="https://content.codecademy.com/courses/web-101/web101-image_brownbear.jpg" alt="text describing image" /></xmp></li>
+
+                        <li><xmp><span></span></xmp> element is an inline container for text and can be used to group text for styling purposes.</li>
+
+                        <li><xmp><ul></xmp> unordered list element is used to create a list of items in no particular order. Each individual list item will have a bullet point by default.
+                            <br><xmp class="ex">type="square"</xmp> - kwadraty
+                            <br><xmp class="ex">type="circle"</xmp> - kółka
+                            </li>
+
+                        <li><xmp><OL></xmp> ordered list element creates a list of items in sequential order. Each list item appears numbered by default.
+                            <br><xmp class="ex">type="A"</xmp>
+                            <br><xmp class="ex">type="a"</xmp>
+                            <br><xmp class="ex">type="I"</xmp>
+                        </li>
+
+                        <li>
+                            <xmp>ID</xmp> - Valid id attributes should begin with a letter and should only contain letters (a-Z), digits (0-9), hyphens (-), underscores (_), and periods (.).
+                        </li>
+                       
+                        <li>
+                            <xmp>NAME</xmp> - HTML attributes consist of a name and a value using the following syntax: name="value" and can be added to the opening tag of an HTML element to configure or change the behavior of the element.
+                            <br><xmp class="full"><elementName name="value"></elementName></xmp>
+                        </li>
+
+                    </ul>
+                </p>
+            </section>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">HTML -  Structure</h2>
+                <p class="data">19.03.2021</p>
+                <p class="tag">#html</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+                        <li>
+                            <xmp><head></head></xmp> - element contains general information about an HTML page that isn’t displayed on the page itself. This information is called metadata and includes things like the title of the HTML document and links to stylesheets.
+
+
+                        </li>
+
+                        <li>
+                            <xmp><title></title></xmp> - element contains a text that defines the title of an HTML document. The title is displayed in the browser’s title bar or tab in which the HTML page is displayed. The "title" element can only be contained inside a document’s "head" element.
+                        <br><img src="title.png">
+                        </li>
+
+                        <li>
+                            <xmp><a></a></xmp> -  is used to create hyperlinks in an HTML document. The hyperlinks can point to other webpages, files on the same server, a location on the same page, or any other URL via the hyperlink reference attribute, href. The href determines the location the anchor element points to.
+                            <br><xmp class="full"><a href="https://www.wikipedia.org/">This Is A Link To Wikipedia</a></xmp>
+                            <br><xmp class="ex">target="_blank"</xmp> - otwiera w nowej stronie
+                            <br><xmp>./</xmp>
+                                A relative path is a filename that shows the path to a local file (a file on the same website, such as ./index.html) versus an absolute path (a full URL, like https://www.codecademy.com/learn/learn-html which is stored in a different folder). The ./ in ./index.html tells the browser to look for the file in the current folder.
+                            <br><xmp>#</xmp> Anchor element can create hyperlinks to different parts of the same HTML document using the href attribute to point to the desired location with # followed by the id of the element to link to.
+                            <br><xmp class="full"><p id="id-of-element-to-link-to">A different part of the page!</p></xmp>
+                            <br><xmp class="full"><a href="#id-of-element-to-link-to">Take me to a different part of the page</a></xmp>
+                        </li>
+
+                        <li><xmp><!--  --></xmp> - komentarz
+                        </li>
+
+                        <li>
+                            <xmp><!DOCTYPE html></xmp> - is required as the first line of an HTML document. The doctype declaration is an instruction to the browser about what type of document to expect and which version of HTML is being used, in this case it’s HTML5.
+                        </li>
+                    </ul>
+                </p>
+            </section>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">html: tables</h2>
+                <p class="data">22.03.2021</p>
+                <p class="tag">#html</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+
+                        <li>
+                            <xmp><table></table></xmp> - tworzy tabele, element nadrzędny
+                        </li>
+
+                        <li>
+                            <xmp><tr></tr></xmp> - table row, wiersz kolumny, poziomo
+                            <br><img src="row.png">
+                        </li>
+
+                        <li>
+                            <xmp><td></td></xmp> - table data, pojedyncza komórka z danymi 
+                            <br><img src="tabledata.png">
+                        </li>
+
+                        <li>
+                            <xmp><th></th></xmp> - table heading, nagłówek tabeli, tytuły, mogą być umieszczane w wierszach lub kolumnach
+                            <br><xmp class="ex"><th scope="col"></xmp> - heading dla kolumny
+                            <br><xmp class="ex"><th scope="row"></xmp> - heading dla wiersza
+                            <br><xmp class="ex"><th></th>></xmp> - pusta komórka headingu
+                            <br> <img src="tableheading.png">
+                        </li>
+
+                        <li>
+                            <xmp>border: ;</xmp> - do wpisania w css dla tr, td, th
+                        </li>
+
+                        <li>
+                            <xmp>spanning</xmp> - rozszerzenie komórki w dół lub w bok
+                            <br><xmp class="ex"><td rowspan="2"></xmp> - rozszerzenie na dwie komórki wszerz wiersza
+                            <br><xmp class="ex"><td colspan="3"></xmp> - rozszerzenie o trzy komórki wzdłuż kolumny
+                            <br><img src="colspan.png">
+                           
+                            <br><img src="rowspan.png">
+                        </li>
+
+                        <li>
+                            <xmp><tbody></tbody></xmp> - do sekcjonowania wiekszych tabel, zawiera wszystkie dane, oprocz headingów
+                            <br><img src="tbody.png">
+                        </li>
+                    
+
+                        <li>
+                            <xmp><thead></thead></xmp> - zawiera dane nagłówków
+                            <br><img src="thead.png">
+                        </li>
+
+                        <li>
+                            <xmp><tfoot></tfoot></xmp> - zawiera dane sumaryczne na dole tabeli
+                            <br><img src="tfoot.png">
+                        </li>
+
+                    </ul>
+                </p>
+            </section>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">HTML - SEMANTIC</h2>
+                <p class="data">19.03.2021</p>
+                <p class="tag">#html</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+                        <LI>
+                            <xmp><header></header></xmp> zamiast <xmp><div id="header"></div></xmp> - góra strony
+                            <br><img src="header.png">
+                        </LI>
+
+                        <li>
+                            <xmp><nav></nav></xmp> - buttony nawigacyjne
+                         
+                        </li>
+
+                        <li>
+                            <xmp><Main></Main></xmp> - used to encapsulate the dominant content within a webpage, <strong>zawiera header</strong>
+                            <br><img src="main.png">
+                        </li>
+
+                        <li>
+                            <xmp><footer></footer></xmp> contains information such as:
+
+                            Contact information, Copyright information, Terms of use, Site Map, Reference to top of page links
+                            <br> <strong>oddzielnie od maina</strong>
+                        </li>
+
+                        <li>
+                            <xmp><section></section></xmp> - defines elements in a document, such as chapters, headings, or any other area of the document with the same theme, Generally developers will use /section/ to define a theme for the webpage and use /article/ to write independent content for that theme. This does not mean that /article/ has to be used with /section/.
+                            <img src="section.png">
+                        </li>
+
+                        <li>
+                            <xmp><article></article></xmp> - holds content that makes sense on its own such as articles, blogs, and comments
+                        
+                        </li>
+
+                        <li>
+                            <xmp><aside></aside></xmp> - used to mark additional information that can enhance another element but isn’t required in order to understand the main content. This element can be used alongside other elements such as /article/ or /section/. Some common uses of the /aside/ element are for:
+
+                                Bibliographies, Endnotes, Comments, Pull quotes, Editorial sidebars, Additional information
+                                <br>An example of this would be an article that discusses how to take care of a dog and next to the article an ad would appear advertising a dog grooming product.
+                            <br><img src="aside.png">
+                        </li>
+
+                        <li>
+                            <xmp><figure></figure></xmp> - is an element used to encapsulate media such as an image, video, gif, illustration, diagram, code snippet, etc, which is referenced in the main flow of the document
+                        </li>
+
+                        <li>
+                            <xmp><figcaption></figcaption></xmp> - used to describe the media encapsulated within the /figure/ element. Developers will normally use /figcaption/ within the /figure/ element to group the media and description. This way, if a developer decides to change the position of the media, the description will follow along with it.
+                            <br><img src="figure.png">
+                        </li>
+
+                        <li>
+                            <xmp><audio></audio></xmp>
+                            <br><xmp class="full"><audio><source src="iAmAnAudioFile.mp3" type="audio/mp3"></audio></xmp>
+                            <br><xmp class="ex"><audio src="koreanhiphop.mp3"></audio></xmp>
+                            <br><xmp class="full"><audio autoplay controls></xmp>
+                            <br><xmp class="ex">attributes: control, autoplay, volume, duration, loop, muted </xmp>
+                        </li>
+
+                        <li>
+                            <xmp><video></video></xmp>
+                            <br><xmp class="full"><video src="coding.mp4" controls>Video not supported</video></xmp>
+                            <br><xmp class="ex">attributes: control, autoplay, volume, duration, loop, muted </xmp>
+                        </li>
+
+                        <li>
+                            <xmp><embed></xmp> - any media: gif, video, image
+                            <br><xmp class="full"><embed src="download.gif"></xmp>
+                        </li>
+
+                    </ul>
+                </p>
+            </section>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">CSS: basics</h2>
+                <p class="data">19.03.2021</p>
+                <p class="tag">#css</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+
+                        <li>
+                            <xmp><LINK></xmp>  można pominąć type
+                            <br><xmp class="full"><link href="style.css" type="text/css" rel="stylesheet"></xmp>
+                        </li>
+
+                        <li>
+                            <xmp>Inline style</xmp>
+                            <xmp class="full"><p style="color: red;">I'm learning to code!</p></xmp>
+                        </li>
+
+                        <li>
+                            <xmp>Style tag</xmp>
+                            <xmp class="full"><head><style></style></head></xmp>
+                        </li>
+
+                        <li>
+                            <xmp>class="guwno"</xmp> > <xmp class="ex">.guwno</xmp>
+                        </li>
+
+                        <li>
+                            <xmp>id="guwno"</xmp> > <xmp class="ex">#guwno</xmp>
+                        </li>
+
+                        <li><xmp>h1.guwno {} </xmp> - The code above would select only the h1 elements that have a class of .guwno. If a p element also had a class of .guwno, the rule in the example would not style the paragraph.</li> 
+
+                        <li>
+                            <xmp>.guwno h1 {}</xmp> - ! ze spacją ! - wybiera h1 zagnieżdżone w .guwno
+                            <br><img src="nested.png">
+                        </li>
+
+                        <li>
+                            <xmp>h1, h1, .guwno, .elo</xmp> - ! po przecinku ! - wybiera kilka selektorów
+                        </li>
+
+                        <li>
+                            <xmp>!important</xmp> - used on declarations to override any other declarations for a property and ignore selector specificity. !important rules will ensure that a specific declaration always applies to the matched elements. However, generally it is good to avoid using !important as bad practice.
+                        </li>
+
+                        <li>
+                            <xmp>+</xmp> - is called the adjacent sibling combinator; it will only select two elements when they are immediately next to each other, with the same parent. The element that actually gets selected is the second element of this sibling pair.
+                            <br><xmp class="ex">.breadcrumb li+li { }</xmp>
+                        </li>
+
+                        <li>
+                            <xmp>::before</xmp> -  part of this selector creates a pseudo-element. The ::before pseudo-element is often used with the content property, to add content that will be displayed just before the selected element.
+                            <br><xmp class="full">.breadcrumb li+li::before {</xmp>
+                            <br><xmp class="full">content: "/"; }</xmp>
+                        </li>
+
+                        <li>
+                            <xmp>* {}</xmp> - uniwersalny selector, dla wszystkich elementów
+                        </li>
+
+                        <li>
+                            <xmp>type[attribute*=value]</xmp> attribute selector, pozwala zaznaczać elementy o okreslonym atrybucie i wartości tego atrybutu
+                            <img src="att-selector.png">
+                            <img src="attribute-selector.png">
+                            <br>The first ruleset looks for an img element with an attribute of src that contains the string 'winter', and sets the height to 50px.
+                        </li>
+
+                        <br><a href="https://www.w3schools.com/cssref/css_selectors.asp">CSS Selectors</a>
+                        <br><img src="ruleset.png">
+                    </ul>
+                </p>
+            </section>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">CSS: visual rules</h2>
+                <p class="data">19.03.2021</p>
+                <p class="tag">#html</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+
+                        <li>
+                            <xmp>font-family:</xmp> - default Times New Roman, nie wiecej niż 3 na strone, jeśli nazwa fonta składa sie z kilku wyrazów trzeba użyć ""
+                        </li>
+
+                        <li>
+                            <xmp>font-size:</xmp> - wyrażane w px, <xmp class="ex">0.5em</xmp> - połowa rodzica, <xmp class="ex">0.5rem</xmp> - połowa body 
+                        </li>
+
+                        <li>
+                            <xmp>font-weight:</xmp> normal - 400,  bold - 700, 300 - light, bolder - o jeden stopień grubszy niż parent element, lighter - o jeden stopień cieńszy niż parent element
+                            <br><xmp class="ex">font-weight: 800;</xmp>
+                        </li>
+
+                        <li>
+                            <xmp>text-align:</xmp> - left, right, center
+                        </li>
+
+                        <li>
+                            <xmp>color:</xmp> - white, #111111, rgb, hsl, hsla
+                            <br><xmp>background-color:</xmp>
+                        </li>
+
+                        <li>
+                            <xmp>opacity:</xmp> - przezroczystość, <xmp class="ex">opacity: 0.8;</xmp>
+                        </li>
+
+                        <li>
+                            <xmp>background-image:</xmp>
+                            <br><xmp class="full">background-image: url("https://www.example.com/image.jpg");</xmp>
+                            <br><xmp class="full">background-image: url("images/mountains.jpg");</xmp>
+                        </li>
+
+                        <li>
+                            <xmp>box-shadow:</xmp> - cień dla całego elementu
+                            <br><xmp class="ex">box-shadow: 3px 1px 1px red;</xmp> - 3 po osi x, 1 po osi y, 1px rozmycia i kolor czerwony
+                        </li>
+
+                        <li>
+                            <xmp>vertical-align: ;</xmp> - umiejscowienie góra-dół
+                            <br><xmp class="ex">vertical-align: super;</xmp> - napis na górze, jak potęgowanie
+                        </li>
+                    </ul>
+                </p>
+            </section>
+
+        
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">Css: colors</h2>
+                <p class="data">19.03.2021</p>
+                <p class="tag">#css</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+
+                        <li>
+                            <xmp>Hexadecimal</xmp> - A hex color begins with a hash character (#) which is followed by three or six characters. The characters represent values for red, blue and green. (0-9) i (A-F)
+                            <br><xmp class="ex">Black:#000000 or #000</xmp>
+                            <br><xmp class="ex">White:#FFFFFF or #FFF</xmp>
+                            <br><xmp class="ex">Aqua:#00FFFF or #0FF</xmp>
+                        </li>
+
+                        <li>
+                            <xmp>RGB()</xmp> - Red, Green, Blue -  these values range can from 0 to 255.
+                            <br><XMP class="ex">color: rgb(0, 255, 0);</XMP>
+                        </li>
+
+                        <li>
+                            <xmp>HSL()</xmp> - Hue, Saturation, Lightness
+                            <br><xmp class="ex">color: hsl(120, 60%, 70%);</xmp>
+                            <br><img src="hsl.png">
+                        </li>
+
+                        <li>
+                            <xmp>Alpha</xmp> - opacity - dodaj do hsla lub rgba
+                            <br><xmp class="ex">color: hsla(34, 100%, 50%, 0.1);</xmp>
+                            <br><xmp class="ex">color: transparent;</xmp> kolor o zerowym alpha
+
+                        </li>
+                    </ul>
+                </p>
+            </section>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">CSS: typography</h2>
+                <p class="data">19.03.2021</p>
+                <p class="tag">#css</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+
+                        <li>
+                            <xmp>font-style:</xmp>
+                            <xmp class="ex">font-style: italic;</xmp>
+                        </li>
+
+                        <li>
+                            <xmp>word-spacing:</xmp> - Note that it’s good to use em values in this case because em is dynamic — for word spacing, it sets the spacing based on the size of the font. In the example above, the word spacing is set to 0.3em. The default amount of space between words is usually 0.25em and can be set with the value normal. If you provide a value for word-spacing that’s not normal, then the value you provide is added to the default spacing. Therefore, since the word-spacing is set to 0.3em, your /h1/ elements get a total of 0.55em word spacing when rendered.
+                            <br><xmp class="ex">word-spacing: 0.3em;</xmp>
+                        </li>
+
+                        <li>
+                            <xmp>letter-spacing:</xmp> - inaczej <xmp>tracking</xmp>
+                            <br><xmp class="ex">letter-spacing: 0.3em;</xmp>
+                        </li>
+
+                        <li>
+                            <xmp>text-transform:</xmp> - capitalize - pierwsza litera zmienia na wielką, lowercase - wszystko małe, uppercase - wszystko capsem
+                            <br><xmp class="ex">text-transform: none|capitalize|uppercase|lowercase|initial|inherit;</xmp>
+                        </li>
+
+                        <li>
+                            <xmp>line-height:</xmp> - zmienia 'leading'
+                            <br><xmp class="ex">line-height: 1.4;</xmp> - ratio of font size, readjustable, preferowane
+                            <br><xmp class="ex">line-height: 14px| 40% | 0.7em;</xmp>
+                            <br><img src="line.png">
+                        </li>
+
+                        <li>
+                            <xmp>Fallback fonts</xmp>
+                            <br><xmp class="ex">font-family: "Garamond", "Times", serif;</xmp>
+                        </li>
+
+                        <li>
+                            <xmp>Linking Fonts</xmp>
+                            <br><video controls width="50%" src="google-fonts.mov"></video>
+                            <br><a href="https://fonts.google.com">Google Fonts</a>
+                            <br><xmp class="full"><head><link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display" rel="stylesheet"></head></xmp> - to do pliku html
+                            <br><xmp class="ex">font-family: "font-name";</xmp> - to do pliku css
+                            
+                        </li>
+
+                        <li>
+                            <xmp>Font Face</xmp> - load font into stylesheet css
+                            <br><video controls width="50%" src="latin-fonts.mov"></video>
+                            <br><code>@font-face { <br>
+                                font-family: 'Glegoo';<br>
+                                src: url('../fonts/Glegoo-Regular.ttf') format('truetype');
+                              }</code> - to na samą górę pliku css
+                              <br><xmp class="ex">font-family: "font-name";</xmp> - to do pliku css
+
+                        </li>
+
+                        <li>
+                            <xmp>text-shadow:</xmp>
+                            <br><xmp class="ex">text-shadow: 2px 3px 5px red;</xmp> - horizontal, vertical, rozmycie, kolor
+                        </li>
+
+                    </ul>
+                </p>
+            </section>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">css: box model</h2>
+                <p class="data">22.03.2021</p>
+                <p class="tag">#css</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+
+                        <li>
+                            <img src="contentbox.png">
+                        </li>
+
+                        <li>
+                            <xmp>border:</xmp> - ramka
+                            <br><xmp class="ex">border: 3px solid white; </xmp>
+                            <br><xmp class="ex">border-style: none | dotted | solid | dashed | hidden | double | ridge | groove | inset | outset </xmp>
+                            <br><xmp class="ex">border-right-style: dotted </xmp>
+                            <br><xmp class="ex">border-bottom-color: white | rgba (0,0,0,0)</xmp>
+                            <br><xmp class="ex">border-top-width: 3px | thin | medium | thick </xmp>
+
+                        </li>
+
+                        <li>
+                            <xmp>border-radius:</xmp> - zakrzywienie ramki
+                            <br><xmp class="ex">border-radius: 50%</xmp> - okrągła ramka
+                            <br><xmp class="ex">border-radius: 2px</xmp>
+                        </li>
+
+                        <li>
+                            <xmp>padding:</xmp> - pole wewnątrz obiektu, otoczone ramką
+                            <br><xmp class="ex">padding-bottom: 10px;</xmp> - dolny 10px
+                            <br><xmp class="ex">padding: 10px;</xmp> - z każdej strony 10 px
+                            <br><xmp class="ex">padding: 10px 20px 30px 40px;</xmp> - górny 10px, prawy 20px, dolny 30px, lewy 40px
+                            <br><xmp class="ex">padding: 10px 20px;</xmp> - górny i dolny 10px, prawy i lewy 20px
+                        </li>
+
+                        <li>
+                            <xmp>margin:</xmp> - pole na zewnątrz obiektu i ramki
+                            <br><xmp class="ex">margin: 10px;</xmp> - z każdej strony 10px
+                            <br><xmp class="ex">margin-bottom: 10px;</xmp> tylko dolny 10px
+                            <br><xmp class="ex">margin: 10px 20px 30px 40px;</xmp> - tak jak w padding
+                            <br>
+                            <br><xmp class="full">width:100px;</xmp>
+                            <br><xmp class="full">margin: 0 auto;</xmp> - wycentrowanie obiektu, ale tylko mającego określoną szerokość (width)
+                        </li>
+
+                        <li>
+                            <xmp>margin collapse</xmp> - dotyczy górnego i dolnego marginesu, jeśli dwa obiekty jeden nad drugim, mają dolny margin 30 i górny 20, to różnica między nimi wyniesie tylko 30px, marginesy sie nie dodają
+                            <br><img src="collapse.png">
+                        </li>
+
+                        <li>
+                            <xmp>min-width:</xmp> - can be used to set a minimum width and minimum height of an element’s box
+                            <br><xmp>max-height:</xmp> - same
+                        </li>
+
+                        <li>
+                            <xmp>overflow:</xmp> - co ma sie stac, kiedy element staje się większy niż element nadrzędny, zawierający go w sobie
+                            <br><xmp class="ex">hidden</xmp> - ukryj zupełnie
+                            <br><xmp class="ex">scroll</xmp> - dodaj pasek przewijania i skroluj
+                            <br><xmp class="ex">visible</xmp> - default, wyswietlaj mimo to, rozjebawszy układ
+                            <br><xmp class="full">overflow-x: ;</xmp> - poziomo
+                            <br><xmp class="full">overflow-y: ;</xmp> - pionowo
+                            <br>element musi zawierać określone wymiary width i height
+                        </li> 
+
+                        <li>
+                            <xmp>resetting defaults</xmp> - usunięcie domyslnych wartosci css wbudowanych w przegladarke
+                            <br><xmp class="full">* {</xmp>
+                            <br><xmp class="full">margin: 0;</xmp>
+                            <br><xmp class="full">padding: 0;</xmp>
+                            <br><xmp class="full">      }</xmp>
+                            <br><a href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">Normalize css</a> - nie kasuje wszystkiego, a usuwa roznice miedzy przegladarkami
+                        </li> 
+
+                        <li>
+                            <xmp>visibility: hidden;</xmp> - ukryj element, property is used to render hidden objects invisible to the user, without removing them from the page
+                            <br><xmp>visibility: visible;</xmp> - default
+                        </li>
+
+                        <li>
+                            <xmp>box-sizing:</xmp> - sposób rozmiarowania elementów
+                            <br><xmp class="ex">content-box</xmp> - default, nie uwzględnia wartość padding i border, trudniejsze rozmiarowanie
+                            <br><xmp class="ex">border-box</xmp> padding i border są wewnątrz boxa, wiec kiedy width jest ustalone na 300px to zmieniajac wartosc paddingu lub border, zmieni sie zawartosc główna
+                            <br><xmp class="full">* {</xmp>
+                            <br><xmp class="full">box-sizing:border-box;</xmp>
+                            <br><xmp class="full">      }</xmp> - zmiana rozmiarowania dla wszystkich elementów
+                            <br><img src="borderbox.png">
+                        </li>
+                        
+                    </ul>
+                </p>
+            </section>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">css: display and positioning</h2>
+                <p class="data">22.03.2021</p>
+                <p class="tag">#css</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+
+                        <li>
+                            <xmp>position: </xmp>
+                            <br><xmp class="ex">static</xmp> - default
+                            <br><xmp class="ex">relative</xmp> - przesunięcie wobec defaultowej, static pozycji elementu, wymaga instrukcji przesuniecia - inaczej zachowuje sie jak static
+                            <br><xmp class="full">top:10px;</xmp> - przesuwa w dół o 10px
+                            <br><xmp class="full">left:10px;</xmp> - przesuwa w prawo o 10px itd.
+                            <br><xmp class="ex">absolute</xmp> - element ignoruje elementy tego samego poziomu, pozycjonując go relatywnie wobec elementu rodzica
+                            <br><xmp class="ex">fixed</xmp> - podobnie jak absolute, ale przy przewijaniu element pozostaje na swojej pozycji, uzywane przy headerze, footerze, navbarze
+                            <br><xmp class="ex">sticky</xmp> - działa podobnie jak fixed, ale lepiej
+                        </li>
+
+                        <li>
+                            <xmp>z-index: </xmp> - tworzy głębie dla elementów, trzeci wymiar w układzie, decydując który element jest wyświetlany nad którym
+                            <br><xmp class="ex">z-index: 10;</xmp> - im wyższy, tym bardziej na wierzchu
+                        </li>
+
+                        <li>
+                            <xmp>display: </xmp>
+                            <br><xmp class="ex">inline</xmp> - domyślne dla span, a, em, strong - obiekty tagowane mogą ustawiać sie w jednej linii z innymi - box zabiera tylko tyle miejsca, ile potrzebuje do wyswietlenia tresci, nie może być ustalony width ani height takich elementów
+                            <br><xmp class="ex">block</xmp> - domyślne dla h1,h2,h3 itd, p, div, footer - przeciwieństwo inline - potrzebują nowej linijki dla samych siebie, nie mogą sąsiadować z niczym, można ustalić ich wymiary
+                            <br><xmp class="ex">inline-block</xmp> domyślne dla img - mieszanka inline i block, mogą występować obok siebie i możemy określić ich wymiary width i height, nie trzeba używać /br/
+                        </li>
+
+                        <li>
+                            <xmp>float: </xmp> - ustawia kierunek występowania po sobie kolejnych elementów
+                            <br><xmp class="ex">float: right | left;</xmp>
+                        </li>
+
+                        <li>
+                            <xmp>clear: </xmp> - wykorzystywany w kombinacji z <xmp>float</xmp>, pokazuje z której strony obiektu nie może być żadnych innych obiektów, którą stronę wyczyścić?
+                            <br><xmp class="ex">clear: right | left | both | none;</xmp>
+                        </li>
+
+                    </ul>
+                </p>
+            </section>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">Color Theory</h2>
+                <p class="data">24.03.2021</p>
+                <p class="tag">#css</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+
+                        <li>
+                            <xmp>primary colors</xmp> - red, blue, yellow
+                        </li>
+
+                        <li>
+                            <xmp>secondary colors -  mixing primary </xmp> - green, orange, purple
+                        </li>
+
+                        <li>
+                            <xmp>third group - mixing secondary with primary</xmp> - 
+                            <br>Red-orange (Vermillion)
+                            <br>Yellow-orange (Amber)
+                            <br>Yellow-green (Chartreuse)
+                            <br>Blue-green (Teal)
+                            <br>Blue-purple (Violet)
+                            <br>Red-purple (Magenta)
+                            <br><img src="wheel.svg">
+                        </li>
+
+                        <li>
+                            <xmp>tint</xmp> - adding lightness - trzecia wartosc w hsl
+                            <br><xmp>shade</xmp> - decreasing color, adding black - trzecia wartosc w hsla
+                            <br><xmp>color contrast</xmp> - kolory naprzeciwko siebie na kole kolorów
+                            <br><xmp>vibrating colors</xmp> - unikać!, kolory complementary, wysokie nasycenie, trudne dla oczu
+                            <br><xmp>backdrops</xmp> - dla eliminacji vibratins colors, uzywanie prześciowego tła o neutralnej barwie
+                        </li>
+
+                        <li>
+                            <xmp>color schemes</xmp> - <a href="https://color.adobe.com/pl/create/color-wheel">Adobe color</a>
+                            <br><img src="schemes.png">
+                            <br><xmp class="ex">monochromatic</xmp> - wariacje jednego koloru, ciemniejsze lub jasniejsze, poczucie uporządkowania, niski kontrast, użycie białego i czarnego
+                            <br><xmp class="ex">complementary</xmp> - kolory przeciwne sobie na kole, uzywane w logo druzyn sportowych, przyciąga uwage, dobre na buttony
+                            <br><xmp class="ex">analogous</xmp> - sąsiadujące ze sobą kolory, ładne, uspokajające zestawienie, low-contrast - wpadają w podobny ton, nie powinny być uzywane do przyciagania uwagi, dobre na stonowane tło dla reszty contentu, 
+                            <br><xmp class="ex">triadic</xmp> - trzy kolory z trójkąta, poczucie równowagi, bezpieczeństwa, wieksze pole do manewru
+                        </li>
+
+                        <li>
+                            <xmp>color psychology</xmp> - Every color has a different context and meaning, and color psychology can impact how people perceive a design and relate to the colors used. Choosing the right colors can help nonverbally communicate the context and emotion of a product or service.
+                            <br><img src="psycho.png">
+                        </li>
+
+                    </ul>
+                </p>
+            </section>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">Color UI</h2>
+                <p class="data">25.03.2021</p>
+                <p class="tag">#css</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+
+                        <li>
+                            <xmp>Remember:</xmp>
+                            <br><xmp class="ex">Select a dominant brand color and supporting accent colors</xmp>
+                            <br><xmp class="ex">Use contrast to define sections and differentiate actions</xmp>
+                            <br><xmp class="ex">Use semantic colors for error and success messages</xmp>
+                            <br><xmp class="ex">Incorporate default colors for text and backgrounds where needed</xmp>
+                            <br><xmp class="ex">Neutral colors can provide good contrast</xmp>
+                            <br><xmp class="ex">Keep users in mind when selecting color</xmp>
+                            <br><a href="https://color.cloudflare.design">Cloudflare</a>
+                        </li>
+
+                    </ul>
+                </p>
+            </section>
+            
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">text design</h2>
+                <p class="data">26.03.2021</p>
+                <p class="tag">#css</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+
+                        <li>
+                            <xmp>Whitespace</xmp> - A website is like a room, the user needs to be able to move through it easily. And just like a room, it is important to keep it tidy and free of clutter. This is the power of whitespace. Good whitespace allows you to increase the legibility of your text, helps prevent users from skimming over elements, and serves as an unintrusive boundary between different sections of the page, without actually being there.
+                        </li>
+
+                        <li>
+                            <xmp>line spacing</xmp> - leading, odległosc, miedzy dwoma linijkami tekstu, 
+                            <br><xmp class="full">line-height: ;</xmp>
+                            <br><img src="leading.svg">
+                        </li> 
+
+                        <li>
+                            <xmp>tracking</xmp> - odległość miedzy literami i słowami, 
+                            <br><img src="tracking.svg">
+                        </li>
+
+                        <li>
+                            <xmp>kerning</xmp> - odległość miedzy dwoma literami
+                            <br><xmp class="full">letter-spacing: ;</xmp>
+                            <br><img src="kerning.svg">
+                        </li>
+
+                        <li>
+                            <xmp>text navigability</xmp>
+                            <br><xmp class="ex">links should be blue and underlined</xmp>
+                            <br><xmp class="ex">never use blue as a general accent color for text, because your users will probably try to click on it no matter what.</xmp>
+                            <br><xmp class="ex">think about the ways the user’s eyes will travel across your text</xmp>
+                            <br><xmp class="ex">if you organize the text into columns,</xmp> - the user’s eyes will likely not travel across the entire screen, they will travel to the end of a column and then down
+                        </li>
+
+                        <li>
+                            <xmp>text length</xmp> - The average internet paragraph is only 1-3 sentences. It’s actually better to avoid sentences and paragraphs whenever possible and use a list instead.
+                            <br><xmp>line lenght</xmp> - Studies have shown that while users read longer line lengths faster, they actually prefer shorter line lengths and that they provide a better user experience
+                            <br><xmp class="full">The best bet is to aim to have columns that contain roughly 50-75 characters per line</xmp> This will allow the reader to have the sensation of making good progress through the text without being continually interrupted by the line breaks.
+                            <br><xmp>Primacy and Recency effect</xmp> - People will notice and remember the first and last elements of a list or a page better than anything in the middle of the list/page
+                            <br><xmp>image pairing</xmp> - Users eyes are easily drawn to images quicker than they are to text. You can utilize this by pairing important text with images whenever appropriate. This pairing can be accomplished by grouping with card designs (putting them in a div together with a shared background color). This is a great way of adding visual appeal to your text.
+                            <br><xmp class="full">Use colored cards to pair images with important text so users’ eyes are drawn towards it.</xmp>
+                            <br><xmp>f-shaped skimming</xmp> - Users will scan content on the left of the screen before the right of the screen, and the top of the screen before the bottom of the screen. Our eyes jump back to the left of the screen whenever we finish reading a line. This creates an F pattern that the users eye follows, and is thus known as _f-shaped skimming _.
+                            <br><xmp class="full">Have the elements you want users to notice at the top of the page, or down the left-hand side </xmp> - because those are the areas of the page users will notice when skimming.
+                        </li>
+
+                    </ul>
+                </p>
+            </section>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">HTML: Forms</h2>
+                <p class="data">27.03.2021</p>
+                <p class="tag">#html</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+
+                        <LI>
+                            <xmp><form></form></xmp>
+                            <br><xmp class="full"><form action="/example.html" method="POST"></form></xmp>
+                            <br><xmp class="ex">action=</xmp> - determines where the information is sent
+                            <br><xmp class="ex">method=</xmp> - attribute is assigned a HTTP verb that is included in the HTTP request
+                            <br><xmp class="full">method="post"</xmp> - wartosc ukryta <xmp class="full">method="get"</xmp> wartośc zawarta w adresie url, lepiej nie uzywać
+
+                        </LI>
+
+                        <li>
+                            <xmp><input></xmp>
+                            <br><xmp class="full"><input type="text" name="first-text-field" value="guwno" id="test" placeholder="wpisz co jadłeś na śniadanie" required></xmp>
+                            <br><xmp class="ex">name=""</xmp> - wysyłane z forma jako "name=value", zwykle pokrywa sie z id, bardzo wazne, zeby zawsze był w inpucie, bez tego informacje nie zostana przetworzone właściwie
+                            <br><xmp class="ex">value=""</xmp> - domyślna wartość, mozemy ją ustawić wcześniej, jesli uzytkownik wpisze własną wartość, zmieni to domyślne value
+                            <br><xmp class="ex">placeholder=""</xmp> - podpowiedź dla uzytkownika, co ma wpisać w dane pole
+                            <br><xmp class="ex">type=""</xmp> - definiuje rodzaj inputu
+                            <br><xmp class="ex">id=""</xmp> -  uzywane w polaczeniu z labelem
+                            <br><xmp class="ex">required</xmp> - wymagane, bez wypełnienia tego inputu nie mozna przejsc dalej
+                        </li>
+
+                        <li>
+                            <xmp><label></label></xmp> - opis powiazany z inputem, wymaga podania wartosci /for/ toższamej z /id/ inputu
+                            <br><xmp class="full"><label for="meal">What do you want to eat?</label></xmp>
+                            <br><xmp class="full"><input type="text" name="food" id="meal"></xmp>
+                            <br><xmp class="ex">jeśli naciśniemy label, podswietli przypisany mu input</xmp>
+                        </li>
+
+                        <li>
+                            <xmp>type="password"</xmp> - input dla haseł, nie wyswietla wpisanego tekstu, a zakryte znaki
+                            <br><img src="password.png">
+                            <br><input type="password" name="pw" id="pw" placeholder="hasło">
+                        </li>
+
+                        <li>
+                            <xmp>type="number"</xmp> - input dla wartości liczbowych oraz znaków (-, +, .)
+                            <br><xmp class="ex">step="1"</xmp> - dodaje strzałki, pozwalajace zmieniac liczbe o podana wartość
+                            <br><img src="number.png">
+                            <br><input type="number" name="nr" id="nr" step="2">
+                        </li>
+
+                        <li>
+                            <xmp>type="text"</xmp> - zwykły input tekstowy
+                            <br><input type="text" name="user">
+                        </li>
+
+                        <li>
+                            <xmp>type="range"</xmp> - zakres z paskiem i suwakiem, volume control
+                            <br><input type="range">
+                            <br><img src="range.png">
+                            <br><xmp class="ex">min=""</xmp> -  wartość początkowa
+                            <br><xmp class="ex">max=""</xmp> - wartość najwyższa możliwa
+                            <br><xmp class="ex">step="1"</xmp> - zmienia skok suwaka, im wyzsza wartosc tym bardziej choppy, a mniejsza daje fluid
+                        </li>
+
+                        <li>
+                            <xmp>type="checkbox"</xmp> - okienko z wieloma wariantami wyboru do zaznaczenia na raz
+                            <br><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox">
+                            <br><img src="checkbox.png">
+                        </li>
+
+                        <li>
+                            <xmp>type="radio"</xmp> - guziki do zaznaczania z jedną możliwością wyboru
+                            <xmp class="ex">żeby działało, poszczegolne opcje muszą miec to samo /name</xmp>
+                            <br><input type="radio" name="answer" id="1" value="1">
+                            <br><input type="radio" name="answer" id="2" value="2">
+
+                            <br><img src="radio.png">
+                        </li>
+
+                        <li>
+                            <xmp>dropdown list</xmp> - gdy opcji jest duzo dajemy rozwijana liste zamiast radio
+                            <br><img src="dropdown.png">
+                            <br><select name="guwno">
+                                <option value="kupa">Kupa</option>
+                                <option value="sraka">Sraka</option>
+                                <option value="koko">Kokodżambo</option>
+                            </select>
+                        </li>
+
+                        <li>
+                            <xmp>datalist input</xmp> - gdy opcji jest trubodużo i chcemy włączyć wyszukiwarke po wpisaniu początkowych liter, dajemy datalist <xmp class="ex"> nie trzeba dawać nazwy pomiedzy tagami /option/</xmp>
+                            <br><xmp class="full"><input type="text" list="cities" id="city" name="city"></xmp>
+                            <br><xmp class="full"><datalist id="cities"></xmp>
+                            <br><xmp class="full"><option value="Barcelona"></option></xmp>
+                            <br><xmp class="full"><option value="Wyszków"></option></xmp>
+                            <br><xmp class="full"></datalist></xmp>
+                            <br><img src="datalist.png">
+                            <br><input type="text" list="cities" id="city" name="city">
+ 
+                            <datalist id="cities">
+                              <option value="New York City"></option>
+                              <option value="Tokyo"></option>
+                              <option value="Barcelona"></option>
+                              <option value="Mexico City"></option>
+                              <option value="Melbourne"></option>
+                              <option value="Other"></option>  
+                            </datalist>
+
+                        </li>
+
+                        <li>
+                            <xmp><textarea></textarea></xmp> - większe niż type="text"
+                            <br><xmp class="ex">rows=""</xmp> - określa ilość wierszy pola tekstowego
+                            <br><xmp class="ex">cols=""</xmp> -  ilość kolumn pola tekstowego
+                            <br><xmp class="full"><textarea id="blog" name="blog" rows="5" cols="30"></textarea></xmp>
+                            <br><img src="textarea.png">
+                            <br><xmp class="ex">Tekst wpisany pomiedzy tagami /textarea/ bedzie domyślnie wprowadzony i wyświetlony uzytkownikowi</xmp>
+                            <br><textarea id="blog" name="blog" rows="5" cols="30"></textarea>
+
+                        </li>
+
+                        <li>
+                            <xmp>type="submit"</xmp> - tworzy guzik zatwierdzajacy i wysyłajacy forma
+                            <br><xmp class="full"><input type="submit" value="Send"></xmp>
+                            <br><xmp class="ex">value=""</xmp> - edytuje tekst widoczny na przycisku
+                            <br><input type="submit" value="Wyślij">
+                        </li>
+
+                    </ul>
+                </p>
+            </section>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">HTML: form validation</h2>
+                <p class="data">29.03.2021</p>
+                <p class="tag">#html</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+
+                        <li>
+                            <xmp>required</xmp> - wymagane, bez wypełnienia tego inputu nie mozna przejsc dalej
+                        </li>
+
+                        <li>
+                            <xmp>minimum, maximum</xmp> - określenie wymaganej, granicznej wartości
+                            <br><xmp class="full"><input id="guests" name="guests" type="number" min="1" max="4"></xmp>
+                            <br><img src="minmax.png">
+                            
+                        </li>
+
+                        <li>
+                            <xmp>minlength, maxlength</xmp> - dla pola textfield, określa graniczne ilości wpisanych znaków
+                            <br><xmp class="ex">maxlength="200"</xmp>
+                            <br><img src="lenght.png">
+                        </li>
+
+                        <li>
+                            <xmp>pattern=""</xmp> - regex - regular expression - dla określania specyficznych, wpisywanych znaków, zazwyczaj przy haśle lub loginie
+                            <br><xmp class="ex">pattern="[0-9]{14,16}"</xmp> - tylko cyfry, od 14 do 16 znaków
+                            <br><xmp class="ex">[a-zA-Z0-9]+</xmp> - wszystkie małe i duże litery, cyfry, + oznacza powtórzenie wielokrotne tych znaków tzn nie ma limitu znaków dolnego ani górnego, nie można pozostawić pustego
+                            <br><xmp class="ex">[a-zA-Z0-9]*</xmp> - to samo, ale mozna zostawić pole puste
+                            <br><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions">Regular Expressions</a>
+                            <br><a href="http://www.regular-expressions.info/quickstart.html">Quickstart</a>
+                        </li>
+
+                    </ul>
+                </p>
+            </section>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">css: links and buttons</h2>
+                <p class="data">29.03.2021</p>
+                <p class="tag">#css</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+
+                        <li>
+                            <xmp>link styling</xmp> - wyróżniający w zdecydowany sposób od innych treści, tak zeby uzytkownik nie miał wątpliwości co jest linkiem
+                            <br><xmp class="ex">text-decoration: underline;</xmp> - jeśli linki są podkreślone, nic innego nie powinno być
+                            <br><xmp class="full">text-decoration: none | underline | overline | line-through | dotted | dashed | wavy | red | green </xmp>
+                            <br><xmp class="ex">color: blue; backround-color: ; font-weight: ; border: ;</xmp>
+                        </li>
+
+                        <li>
+                            <xmp>title=""</xmp> - dodaje tooltip, wyswietlajacy się po najechaniu na link
+                            <br><xmp class="full"><a href="https://www.codecademy.com" title="Codecademy is an online learning platform">Codecademy</a></xmp>
+                            <br><a href="https://www.codecademy.com" title="Codecademy is an online learning platform">Codecademy</a>
+                        </li>
+
+                        <li>
+                            <xmp>:link</xmp> - pseudoclass dla linków, które nie zostały odwiedzone
+                        </li>
+
+                        <li>
+                            <xmp>:visited</xmp> - pseudoclass dla linków, które zostały odwiedzone
+                        </li>
+
+                        <li>
+                            <xmp>:hover</xmp> - pseudoclass uzywany do wyroznienia elementu, na ktory najechał kursor
+                            <br><xmp class="ex">a:hover { color:orange; }</xmp>
+                        </li>
+
+                        <li>
+                            <xmp>:active</xmp> - pseudoclass dla linków, które są wciśnięte
+                        </li>
+
+                        <li>
+                            <xmp>cursor: ;</xmp> - po najechaniu na link, kursor powinien sie zmienić, by zasygnalizować odmiennośc tego elementu
+                            <br><xmp class="ex">cursor</xmp>
+                            <br><xmp class="ex">copy</xmp>
+                            <br><xmp class="ex">cell</xmp>
+                            <br><xmp class="ex">crosshair</xmp>
+                            <br><xmp class="ex">help</xmp>
+                            <br><xmp class="ex">default</xmp>
+                            <br><xmp class="ex">grab</xmp>
+                            <br><xmp class="ex">move</xmp>
+                            <br><xmp class="ex">pointer</xmp>
+                            <br><xmp class="ex">progress</xmp>
+                            <br><xmp class="ex">row-size</xmp>
+                            <br><xmp class="ex">text</xmp>
+                            <br><xmp class="ex">wait</xmp>
+                            <br><xmp class="ex">none</xmp>
+                            <br><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/cursor#examples">Cursor</a>
+                        </li>
+
+                        <li>
+                            <xmp>Buttons: Skeuomorphic styling</xmp> - aims to imitate the appearance and interactivity of a real-life button
+                            <br><img src="skeu.png">
+                            <br><xmp class="ex">aby uzyskać efekt wcisnięcia</xmp> - dajemy box shadow na buttonie, a w stanie :active, kasujemy box-shadow i obnizamy button wartością margin-top plus do tego zmiany koloru
+                            
+                        </li>
+
+                      
+
+
+                    </ul>
+                </p>
+            </section>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">secondary navigation</h2>
+                <p class="data">31.03.2021</p>
+                <p class="tag">#css</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+
+                        <LI>
+                            <xmp>primary navigation</xmp> - najwazniejsze linki i buttony wyswietlane na kazdej podstronie
+                        </LI>
+
+                        <li>
+                            <xmp>secondary navigation</xmp> - breadcrumb navigation - lista odnosników, stron, ktore prowadziły do obecnie wyswietlanej strony, pomaga zrozumiec gdzie jesteśmy, szczegolnie gdy trafilismy na strone przypadkiem z wyników wyszukiwania
+                            <br><xmp class="ex">zwykle położona w lewym górnym rogu, ułożona w poziomie, zajmuje jak najmniej miejsca</xmp>
+                            <br><xmp class="ex">oddzielona znakami > lub \</xmp>
+                            <br><xmp class="full">display:inline;</xmp>
+                            <br>strona na której sie znajdujemy powinna prowadzić do <xmp class="ex"><a href="#"></a></xmp>
+                            <br><img src="breadcrumb.png">
+                        </li>
+
+                        <li>
+                            <xmp>breadcrumb types</xmp>
+                            <br><xmp class="ex">loaction</xmp> - based on hierarchical structure of site
+                            <br><xmp class="ex">attribute </xmp> - based on attributes of current page or item, dobrze jest wyróżnić ich odmienność
+                            <br><xmp class="ex">path</xmp> - unique to a user’s journey on the site, rzadko używane, konfudujące
+                        </li>
+
+                        <li>
+                            <xmp>attribute type css</xmp> - jak wyróżnić ten element od innych dodajac znak x na koncu
+                            <br><img src="attribute.png">
+                        </li>
+
+                        <li>
+                            <xmp>::before</xmp> - jak znaznaczyć element, aby dodać do niego znak >
+                            <br><xmp class="full">.breadcrumb li.location+li.location::before{</xmp>
+                            <br><xmp class="full">content:">"; }</xmp>
+                        </li>
+
+
+
+                    </ul>
+                </p>
+            </section>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">Resonsive web design</h2>
+                <p class="data">08.04.2021</p>
+                <p class="tag">#css</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+
+                        <li>
+                            <xmp><meta name="viewport" content="width=device-width; initial-scale=1.0"></xmp> - dodać, aby iphone nie skalował obrazków niepotrzebnie
+                        </li>
+
+                        <li>
+                            <img src="link.png"> - ustawienia dla pliku css ładowanego dla mniejszych ekranów, ale tylko w przypadku, gdy urządzenie nie obraca się, nie polecana metoda, lepszy css
+                        </li>
+
+                        <li>
+                            <img src="css-responsive.png">
+                        </li>
+
+                        <li>
+                            <xmp>min-width: ;</xmp> - sets a minimum browser or screen width that a certain set of styles (or separate style sheet) would apply to.
+                            <br><xmp>max-width: ;</xmp> - opposite
+                            <br><xmp class="full">@media screen and (min-width: 800px) and (max-width: 1200px) {</xmp> - dla rozdzielczosci pomiędzy
+                        </li>
+
+                        <li>
+                            <xmp>orientation: ;</xmp> - tylko dla ipada :(
+                            <br><xmp class="ex">orientation: lamdscape | portrait;</xmp>
+                            <br><xmp class="full">@media screen and (orientation: portrait) {</xmp>
+                        </li>
+
+                        <li>
+                            <xmp>display:none;</xmp> - pozwala ukryć treść wyrzucając cały box z układu, a nie tylko go ukrywając jak w <xmp>visibility:hidden;</xmp>
+                        </li> 
+
+
+                    </ul>
+                </p>
+            </section>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">sizing</h2>
+                <p class="data">08.04.2021</p>
+                <p class="tag">#css</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+
+                      
+                        <li>
+                            <xmp>em</xmp> - odnosi sie do wielkości czcionki rodzica, mnoży ją przez wpisana wartość
+                            <br><xmp class="ex">font-size: 2em;</xmp> - gdy czcionka była ustawiona na 16px, to tutaj bedzie miała 32px
+                            <br><xmp class="full">font-size: 1.75em | 0.50em ;</xmp>
+                        </li>
+
+                        <li>
+                            <xmp>rem</xmp> - root em - odnosci sie do domyślnej wielkości czcionki (16px) lub do wielkosci czcionki dla rootowego elementu <xmp><html></html></xmp>, dzieki czemu wszystkie czcionki sa porownywane do jednego elementu, łatwiej sie połapac co bedzie wieksze, a co mniejsze
+                        </li>
+
+                        <li>
+                            <xmp>%</xmp> - uzywane do okreslenia wielkości elementów nietekstowych (image, div, padding, margin), na podstawie ich rodziców
+                            <br><xmp class="ex">width: 50%;</xmp>
+                            <br><xmp class="ex">!wielkość elementów rodziców musi zostać najpierw określona!</xmp> - inaczej mogą wystąpić błędy
+
+                        </li>  
+
+                        <li>
+                            <xmp>max-width: ;</xmp> - minimalna szerokość elementu
+                            <br><xmp>min-width: ;</xmp> - max szerokość elementu
+                            <br><xmp class="ex">min-width: 300px;</xmp>
+                        </li>
+
+                        <li>
+                            <xmp>max-height: ;</xmp> - minimalna wysokość elementu
+                            <br><xmp>min-height: ;</xmp> - max wysokość elementu
+                            <br><xmp class="ex">min-height: 300px;</xmp>
+                            <br><img src="scaling.png">
+                        </li>
+
+                        <li>
+                            <xmp>scaling background</xmp>
+                            <br><xmp>background-image: URL("#");</xmp> - ustawia obrazek tła
+                            <br><xmp>background-repeat: no-repeat;</xmp> - wyłącza kafelkowanie tła
+                            <br><xmp class="ex">background-repeat: repeat | repeat-y | repeat-x | space | round | initial | inherit ;</xmp>
+                            <br><xmp>background-position: center;</xmp> - wyśrodkowanie
+                            <br><xmp>background-size: cover;</xmp> - pokrywa cały element z zachowaniem proporcji
+                            <br><xmp class="ex">background-size: contain;</xmp> - nie przycina i nie rozciąga
+                            <br><xmp class="ex">background-size: auto;</xmp> - chuj wi
+                        </li>
+
+                    </ul>
+                </p>
+            </section>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">media queries</h2>
+                <p class="data">09.04.2021</p>
+                <p class="tag">#css</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+                        
+                        <li>
+                            <xmp>@media</xmp> - keyword
+                            <br><xmp>only screen</xmp> - określa urządzenia z ekranem
+                            <br><xmp class="ex">only handheld | only print </xmp>
+                            <br><xmp>and (max-width : 480px)</xmp> - media feature - wymagania jakie muszą być spełnione, by dana zasada została zastosowana, w tym przypadku to ekrany nie szersze niż 480px
+                            <img src="media.png">
+                        </li>
+
+                        <li>
+                            <xmp>range</xmp> - pozwala ustalić wymagania krańcowe max i min
+                            <img src="range-media.png">
+                            <xmp class="ex">min-width:100</xmp> - większe lub równe >=100
+                            <xmp class="ex">max-width:200</xmp> - mniejsze lub równe >=200
+                            <br><img style="display:inline" src="range-simple.png"> - prościej to samo co wyżej
+                        </li>
+
+                        <li>
+                            <xmp>dpi</xmp> - Dots Per Inch - pozwala targetować wyswietlanie mediów w hd tylko na urządzeniach o odpowiednim wyswietlaczu, ktory potrafi to obsłuzyc
+                            <br><xmp class="ex">(min-resolution: 300dpi)</xmp> - 300 to już dużo, hd-ready, wpisujemy jako warunek w @media
+                            <img src="dpi.png">
+                        </li>
+
+                        <li>
+                            <xmp>and</xmp> - operator pozwalający łączyć i wymagać spełniania kilku warunków jednocześnie
+                        </li>
+
+                        <li>
+                            <xmp>comma list</xmp> - jeśli tylko jeden z warunków, a nie wszystkie na raz, musi być spełniony, to zamiast operatora and, uzywamy przecinka
+                            <img src="comma.png">
+                        </li>
+
+
+                        <li>
+                            <xmp>(orientation: )</xmp> - sprawdza czy strona jest bardziej szeroga czy długa
+                            <br><xmp class="ex">orientation:portrait | landscape</xmp>
+                        </li>
+                    </ul>
+                </p>
+            </section>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">flexbox</h2>
+                <p class="data">13.04.2021</p>
+                <p class="tag">#css</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+
+                        <li>
+                            <xmp>flexbox</xmp> - is not meant to lay out entire pages, it is useful for positioning elements, whether individually or in groups, dobre dla stron o zmiennej szerokości
+                            <br><xmp>flex container</xmp> - zawiera w sobie flex items
+                            <br><xmp class="full">display:flex | inline-flex ;</xmp>
+                            <br><xmp>flex item</xmp> - kazdy bezpośredni child flex containera
+                            <br><xmp>zastosowanie: </xmp> - nawigacja strony, łatwe centrowanie elementów, łatwe przestawianie elementów
+                        </li>
+
+                        <li>
+                            <xmp>display: flex;</xmp> - nadawane aby element stał sie flex containerem, element zachowuje sie jak block, nic innego nie pojawi sie na jego linii, zmienia zachowanie elementów child
+                        </li>
+
+                        <li>
+                            <xmp>display: inline-flex;</xmp> - w odróżnieniu od zwykłego flexa, container również jest elastyczny i zachowuje sie jak inline, umozliwiajac innym elementom sąsiadowanie
+                            <img src="inline-flex.png">
+                            <br><xmp class="ex">jeśli element child jest większy od parenta, to skurczy się, zeby sie w nim zmieścić</xmp>
+                           
+                        </li>
+
+                        <li>
+                            <xmp>justify-content: ;</xmp> - umożliwia pozycjonowanie flex items od lewa do prawa
+                            <br><xmp class="full">justify-content: center;</xmp>
+                            <br><xmp class="ex">flex-start</xmp> - zaczyna od lewej parent containera, bez przerw pomiędzy
+                            <br><xmp class="ex">flex-end</xmp> - odwrotnie, zaczyna od prawej
+                            <br><xmp class="ex">center</xmp> - elementy rozmieszczone pośrodku, bez przerw przed, pomiędzy ani za nimi
+                            <br><xmp class="ex">space-around</xmp> - każdy element ma przerwę przed i za nim, w rezultacie mają podwójne przerwy
+                            <br><xmp class="ex">space-between</xmp> - przerwa tylko pomiędzy elementami
+                            <br><xmp>margin i border nie zaliczają się do przerw, są zawsze obecne</xmp>
+                            <img src="justify.png">
+                        </li>
+
+                        <li>
+                            <xmp>align-items: ;</xmp> - umożliwia pozycjonowanie flex items wertykalnie (góra-dół)
+                            <br><xmp class="ex">flex-start</xmp> - na górze
+                            <br><xmp class="ex">flex-end</xmp> - na dole
+                            <br><xmp class="ex">center</xmp> - po środku
+                            <br><xmp class="ex">baseline</xmp> - spód każdego elementu będzie ze sobą wyrównany
+                            <br><xmp class="ex">stretch</xmp> - jeśli to możliwe i jeśli elementy nie mają ustalonej wysokości, to będą rozciągnięte od góry do dołu maksymalnie
+                            <br><xmp>min-height: ;</xmp> - minimalna wysokość elementu, element na prznajmniej taka wysokość, pomocna przy stretchowaniu
+                            <br><xmp>max-height: ;</xmp> - j/w tylko max
+                            <img src="align-items.png">
+                        </li>
+
+                        <li>
+                            <xmp>flex-grow: ;</xmp> - jeśli container jest za duży, to można dzięki temu określić, które elementy mają zostac powiększone by zapełnić lukę
+                            <br><xmp class="ex">flex-grow: 2;</xmp> - element powiększy swoje pole dwa razy bardziej niż element o wartości flex-grow:1;, jesli wolnego miejsca jest 75px, to weźmie on 50px, a drugiemu zostawi 25px
+                            <br><xmp class="ex">flex-grow: 1;</xmp> - jeśli ustawimy wszystkim elementom taką wartośc, bedą rosły równo, jeśli ustawimy tylko jednemu, to tylko on bedzie rósł
+                            <img src="flex-grow.png">
+                            <xmp class="ex">min-width, max-width, min-height, max-height</xmp> - mają tu zastosowanie
+                            <br><xmp>domyślna wartość to flex-grow:0;</xmp> - dlatego tez póki nie zapiszemy tej reguły, nie bedzie rosło
+                        </li>
+
+                        <li>
+                            <xmp>flex-shrink: ;</xmp> - analogicznie do flex-grow, tylko co robić gdy container się zmniejszy
+                            <br><xmp class="full">flex-shrink: 1;</xmp> - domyślna wartość, dlatego elementy maleją automatycznie bez kodu
+                            <br><xmp class="ex">flex-shrink: 0;</xmp> - element nie bedzie sie kurczył
+                            <br><xmp class="ex">marginsy są wyłączone z flex-shrink i flex-grow</xmp> -  nie można ich zmienić
+                        </li>
+
+                        <li>
+                            <xmp>flex-basis: ;</xmp> - inny sposób określenia bazowej wielkości elementu, zamiast określania width lub height
+                            <br><xmp class="ex">flex-basis: 50px;</xmp>
+                            <img src="flex-basis.png">
+                            <xmp class="ex">ograniczone przez max/min-width/height</xmp>
+                            <br><xmp class="ex">jeśli wpisane, zastępują wartości height i width</xmp>
+                        </li>
+
+                        <li>
+                            <xmp>flex: ;</xmp> - shorhand, dla szybszego wpisywania
+                            <br><xmp class="ex">flex: 2 1 150px;</xmp> flex-grow:2, flex-shrink:1, flex-basis:150px
+                            <br><xmp class="full">flex: 2 1;</xmp> - flex-grow:2, flex-shrink:2 
+                            <br><xmp class="full">flex: 2 150px</xmp> - flex-grow:2, flex-basis:150px
+                            <br><xmp class="ex">nie można okreslić tylko flex-shrink i flex-basis w jednym shorthandzie</xmp>
+                        </li>
+
+                        <li>
+                            <xmp>flex-wrap: ;</xmp> - określa czy element ma zostac przeniesiony do następnej linii kiedy sie nie mieści w containerze
+                            <br><xmp class="ex">flex-wrap: nowrap;</xmp> - domyślne, zapobiega wrapowaniu
+                            <br><xmp class="ex">flex-wrap: wrap;</xmp> - przenosi wybrany element do nastepnej linii
+                            <br><xmp class="ex">flex-wrap: wrap-reverse;</xmp> - odwrócenie, ten element zostanie, a przeniesione zostaną inne, generalnie popierdolone i chyba nie ma sensu używac
+                            <img src="flex-wrap.png">
+                            
+                            <br><img src="wrap.png">
+                        </li>
+
+                        <li>
+                            <xmp>align-content: ;</xmp> - góra-dół - kiedy mamy kilka linii elementów, możemy pozycjonować te linie wobec siebie, podobnie jak w <xmp>align-item</xmp>
+                            <br><xmp class="ex">flex-start</xmp> - linie na górze containera
+                            <br><xmp class="ex">flex-end</xmp> - na dole
+                            <br><xmp class="ex">center</xmp> - po srodku
+                            <br><xmp class="ex">space-around</xmp> - równomiernie od góry do dołu, ale z przestrzenią przed i pomiędzy
+                            <br><xmp class="ex">space-between</xmp> - równomiernie, ale z przestrzenią tylko pomiędzy elementami
+                            <br><xmp class="ex">stretch</xmp> - rozciąga jak tylko sie da po całości containera, dobrze jest dodać wartość <xmp>min-height</xmp>
+                            <img src="align-content.png">
+                        </li>
+
+                        <li>
+                            <xmp>flex-direction: ;</xmp> - odwraca osie, zmieniając kolumny z liniami, transcośtam
+                            <br><xmp>main axis</xmp> - horyzontalna, uzywana do pozycjonowania justify content, flex-wrap, flex-grow, flex-shrink 
+                            <br><xmp>cross axis</xmp> -  wertykalna, używana do pozycjonowania align-item, align-content
+                            <br><xmp class="ex">flex-direction: row;</xmp> - default, od lewej do prawej i w doł
+                            <br><xmp class="ex">flex-direction: row-reverse;</xmp> - pozycjonowanie od prawej do lewej i w dół                        
+                            <br><xmp class="ex">flex-direction: column;</xmp> - od góry do dołu, zaczynając od lewej strony
+                            <br><xmp class="ex">flex-direction: column-reverse;</xmp> -  od góry do dołu, zaczynając od prawej strony
+                        </li>
+
+                        <li>
+                            <xmp>flex-flow: ;</xmp> - shorthand dla flex-direction i flex-wrap 
+                            <br><xmp class="ex">flex-flow: column wrap;</xmp>
+                        </li>
+
+                        <li>
+                            <xmp>nested flexboxes</xmp> - container zanestowany w innym containerze, do tworzenia layoutów
+                            <img src="nest.png">
+                        </li>
+
+
+
+                    </ul>
+                </p>
+            </section>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">Grid</h2>
+                <p class="data">29.04.2021</p>
+                <p class="tag">#css</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+
+                        <li><xmp>grid anatomy</xmp>
+                            <img src="grid.png">
+                        </li>
+
+                        <li>
+                            <xmp>column</xmp> - pionowy container
+                        </li>
+
+                        <li>
+                            <xmp>row</xmp> - poziomy container
+                            <img src="row2.png">
+                        </li>
+
+                        <li>
+                            <xmp>gutter</xmp> - wolna przestrzeń pomiędzy kolumnami i rzędami, zawsze o jeden mniej niz liczba kolumn, powinien być na tyle duży, zeby widzieć granice pomiedzy kolumnami, ale mniejszy niż te kolumny
+
+                        </li> 
+
+                        <li>
+                            <xmp>responsive grid</xmp> - gridy jako popularne narzedzie do skalowania stron, max contentu i duża wygoda plus przewiew w layoucie
+                            <img src="responsivegrid.png">
+                        </li>
+
+                        <li>
+                            <xmp>passive whitespace</xmp> - micro whitespace - bardziej estetyka niż pokazywanie kierunku i uwypuklanie elementów, drobne zmiany tylko, text elementy, zależy już nawet od fonta, a potem line-height, margin,
+                            <img src="whitespacepassive.png">
+                        </li>
+
+                        <li>
+                            <xmp>active whitespace</xmp> intencjonalne wysuwanie elementów przed szereg i akcentowanie ich ważności na stronie, pomaga użytkownikowi skupić sie na tym, co najwazniejsze i przechodzić od punktu do punktu
+                            
+                        </li>
+
+                    
+                    </ul>
+                </p>
+            </section>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">Grid Container</h2>
+                <p class="data">11.05.2021</p>
+                <p class="tag">#css</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+
+                        <li>
+                            <xmp>grid container</xmp> - parent element dla <xmp class="ex" >grid items</xmp> nadający im pozycjonowanie i formatowanie
+
+                        </li>
+
+                        <li>
+                            <xmp>display: grid;</xmp> - block-level grid
+                            <br><xmp>display: inline-grid;</xmp> - inline grid
+                        </li>
+
+                        <li>
+                            <xmp>grid-template-columns: ;</xmp> pozwala na tworzenie i zarządzanie ilością i szerokością kolumn, domyślnie każdy grid ma tylko jedną kolumnę
+                            <br><xmp class="ex">grid-template-columns: 200px 100px;</xmp> tworzy dwie kolumny o szerokości 200 i 100
+                            <br><xmp class="full">grid-template-columns: 20% 30% 10%;</xmp> - tworzy trzy kolumny o szerokości odpowiadającej procentowej szerokości całego grida, potrzeba ustanowić <xmp class="ex">width: ;</xmp>  dla danego grida
+                            <br><xmp class="ex">grid-template-columns: 50px auto 50px;</xmp> - środkowa kolumna będzie miała szerokośc dopasowaną do reszty pozostałego miejsca lub zawartości
+                        </li>
+
+                        <li>
+                            <xmp>grid-template-rows: ;</xmp> - tworzenie poziomych wierszy grida, analogicznie do kolumn, tyle tylko ustawiamy <xmp class="ex">height: ;</xmp> grida
+
+                        </li>
+
+                        <li>
+                            <xmp>możemy tworzyć grid-template-areas</xmp> - przy pomocy grid-template-columns i rows, wystarczy wpisać pomiędzy tworzone rzędy nazwy pól, np. [main-start] i potem [main-end]
+                            <IMG src="GRID-TEMPLATE-SPRYCIULEK.png">
+                            <IMG src="GRID-TEMPLATE-SPRYCIULEK2.png">
+                        </li>
+
+                        <li>
+                            <xmp>grid-template: / ;</xmp> - shorthand dla ustalania wierszy i po slashu (/) kolumn
+                            <br><xmp class="ex">grid-template: 100px 40% / 200px 200px 300px;</xmp> - dwa wiersze i trzy kolumny
+                        </li>
+
+                        <li>
+                            <xmp>fraction</xmp> - <xmp>fr</xmp> - względna jednostka skalowania - responsive unit  - zapobiega overflow i wyjezdzanie kolumn poza szerokość grida, dzieli go na części, frakcje
+                            <br><xmp class="ex">grid-template: 2fr 1fr 1fr / 1fr 3fr 1fr;</xmp> - wiersze podzielone na cztery części z 4fr - pierwszy wiersz dostanie połowę wysokości, a dwa pozostałe po ćwierci, podobnie kolumny
+                            <br><xmp class="full">grid-template-columns: 1fr 60px 1fr;</xmp> - 60px zostaje zabrane z całości, a frakcje dzielą pozostały z tego obszar, co zapobiega overflow
+                            <br><xmp class="full">grid-template-columns: 1fr 20% 1fr;</xmp> - druga kolumna zajmuje 20% szerokości, a pozostałe dwie dzielą się tym co zostało
+
+                        </li>
+
+                        <li>
+                            <xmp>vmin</xmp> - wartośc odpowiadającą procentowi szerokości lub wysokości ekranu wyswietlającego dany element, lepiej skalowalny na różnych ekranach, warto sprawdzić
+                            <br><xmp class="ex">grid-template-rows: repeat(5, 20vh);</xmp>
+                        </li>
+
+                        <li>
+                            <xmp>repeat ( , )</xmp> - funkcja, którą można wpisać przy tworzeniu kolumn i wierszy aby zapobiegać powtarzaniu dużych ilości podobnych wartości
+                            <br><xmp class="ex">grid-template-columns: repeat(3, 100px);</xmp> - tworzy trzy kolumny o szerokości 100px
+                            <br><xmp class="ex">repeat(5, 1fr)</xmp> -  pięć elementów podzielonych na równe części
+                            <br><xmp class="ex">grid-template-columns: repeat(2, 20px 50px)</xmp> - tworzy cztery kolumny, gdzie pierwsza i trzecia beda miały 20px, a druga i czwarta 50px;
+                            <br><xmp class="full">można używac w shorthandzie</xmp> - grid-template: repeat(3, 1fr) / 3fr 50% 1fr;
+
+                        </li>
+
+                        <li>
+                            <xmp>minmax ( , )</xmp> - funkcja, pozwalająca określić max i min wartości szerokości kolumny lub wysokości wiersza, w zależności od zawartości lub rozmiaru wyświetlacza
+                            <br><xmp class="ex">grid-template-columns: 100px minmax(100px, 500px) 100px;</xmp> - dwie skrajne kolumny mają szerokość 100px, a środkowa jest zmienna pomiędzy 100 a 500px
+
+                        </li>
+
+                        <li>
+                            <xmp>auto</xmp> -  szerokość lub wysokośc elementu będzie dopasowana do zawartości, przydatne przy ustalaniu <xmp class="ex">minmax</xmp>
+                        </li>
+
+                        <li>
+                            <xmp>grid-column-gap: ;</xmp> <xmp>column-gap: ;</xmp>- ustanawia przerwę pomiędzy kolumnami, ale tylko pomiędzy nimi, a nie na początku czy końcu grida
+                            <br><xmp>grid-row-gap: ;</xmp> <xmp>row-gap: ;</xmp>- przerwa pomiędzy wierszami, ale tylko pomiędzy nimi, a nie na początku czy końcu grida
+                            <br><xmp class="ex">grid-column-gap: 10px;</xmp> - przerwa 10px pomiedzy kolumnami
+                            <br>jeśli chcesz ustawić różne przerwy pomiędzy itemami, to lepiej wykorzystać puste dodatkowe komórki, nie da sie zmieniać wartości gapa dla poszczególnych elementów :(
+                        </li>
+
+                        <li>
+                            <xmp>grid-gap: ;</xmp> <xmp>gap: ;</xmp> - shorthand dla ustawienia wierszy i kolumn
+                            <br><xmp class="ex">grid-gap: 20px 10px;</xmp> - 20px dla wierszy, 10px dla kolumn
+                        </li>
+
+                    </ul>
+                </p>
+            </section>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">Grid items</h2>
+                <p class="data">12.05.2021</p>
+                <p class="tag">#css</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+
+                        <li>
+                            <img src="grid.svg">
+                        </li>
+
+                        <li>
+                            <xmp>grid-row-start: ;</xmp> -  określa gdzie zaczyna się grid item, liczba zwykła
+                            <br><xmp>grid-row-end: ;</xmp> - gdzie kończy się item, przy czym ten numer na być większy o jeden niż dany wiersz czy kolumna, z zapasem +1
+                            <br><xmp class="ex">grid-row-start: 1;</xmp> <xmp class="ex">grid-row-end: 3;</xmp> - item rozciąga się od 1 do 2 wiersza
+                            <br><xmp class="ex">grid-row-start: 2;</xmp> <xmp class="ex">grid-row-end: 7;</xmp> - item rozciąga się od 2 do 6 wiersza
+                            <br><xmp class="full">z-index: ;</xmp> - aby zarządzać komórkami, ktore na siebie nachodzą
+                            <br><xmp>-1</xmp> - taka wartość w column-end zapewnia, ze item ciągnie się przez  cała szerokość
+                            <br><xmp>grid-column-start: col 2;</xmp> - mozemy po prostu zapisac, ze item zaczyna sie w kolumnie drugiej, żeby zapomniec o mylącym numerowaniu linii
+                            <br><xmp class="ex">grid-column: col 2 / span 2;</xmp> - najłatwiej
+                        </li>
+
+                        <li>
+                            <xmp>grid-row: / ;</xmp> - shorthand dla grid-row-start i grid-row-end
+                            <br><xmp class="ex">grid-row:5/7;</xmp> - item od 5 do 6 wiersza
+                        </li>
+
+                        <li>
+                            <xmp>grid-column: / ;</xmp> - shorthand dla grid-column-start i grid-column-end, analogicznie co wyżej
+                        </li>
+
+                        <li>
+                            <xmp>span</xmp> - pozwala określić ilość wierszy/kolumn zajmowanych przez item począwszy od startu
+                            <br><xmp class="ex">grid-row: 4 / span 2;</xmp> - item zaczyna sie w 4 wierszu i kończy w 5 - to samo co przy <xmp class="ex">grid-row: 4/6</xmp> i to samo przy <xmp class="ex">grid-row:span 2 / 6;</xmp>
+                        </li>
+
+                        <li>
+                            <xmp>grid area: / / / ;</xmp> - shorthand shorthandów, po kolei wartości <xmp class="ex">grid-row-start</xmp>, <xmp class="ex">grid-column-start</xmp>, <xmp class="ex">grid-row-end</xmp> i <xmp class="ex">grid-column-end</xmp>
+                            <br><xmp class="full">grid-area: 2 / 3 / 4 / span 5;</xmp> - wiersz 2 do 3, kolumna 3 do 8
+                            <img src="grid-area.png">
+                        </li>
+
+                    </ul>
+                </p>
+            </section>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">Advanced Grid</h2>
+                <p class="data">13.05.2021</p>
+                <p class="tag">#css</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+
+                        <li>
+                            <xmp>grid-template-areas: "" ;</xmp> - pozwala nazywać tworzone części layoutu i używać tych nazw w <xmp class="ex">grid-area</xmp>, <xmp class="ex">grid-row-start</xmp>, <xmp class="ex">grid-row-end</xmp> itd. pojawia sie w opisie grid containera, na początku, tworzy wyobrażalny układ strony w łatwy sposób dzieląc je na części, fajne
+                            <img src="area-template.png">
+                            W tym przypadku, tworzy dwie kolumny i cztery wiersze - header, nav i footer są rozciagniete na całość, a info i services są obok siebie w jednym wierszu
+                            <br><xmp class="ex">"main main . sidebar"</xmp> - kropka oznacza pustą komórke, zostawia tutaj miejsce
+                            <br><xmp class="ex">"main main none sidebar</xmp> - none - no grid areas are defined, chyba pomija komórke i rozszerza reszte
+                        </li>
+                        
+                        <li>
+                            <xmp>overlapping</xmp> - nakładanie się elementów na siebie, dużo łatwiejsze w gridzie, wykorzystuje parametr <xmp class="ex">z-index</xmp> i numery kolumn, mozna to ustawić jak kratki w zeszycie
+                            <br><xmp>column axis</xmp> - block axis, od góry do dołu
+                            <br><xmp>row axis</xmp> - inline axis, od lewej do prawej
+                        </li>
+
+                        <li>
+                            <xmp>justify-items: ;</xmp> - pozycjonuje elementy wobec row axis, od lewej do prawej, opisywane w grid containers
+                            <br><xmp class="ex">start</xmp> - od lewej
+                            <br><xmp class="ex">end</xmp> - od prawej
+                            <br><xmp class="ex">center</xmp> - po środku
+                            <br><xmp class="ex">stretch</xmp> - wypełnia całe dostępne miejsce
+                            <br><xmp class="ex">auto</xmp> - ?
+                            <br><xmp class="ex">baseline</xmp> - ?
+                            <img src="justify-item.png">
+                        </li>
+
+                        <li>
+                            <xmp>align-items: ;</xmp> - pozycjonuje elementy na column axis, od góry do dołu, opisywane w grid containers
+                            <br><xmp class="ex">start</xmp> - od lewej
+                            <br><xmp class="ex">end</xmp> - od prawej
+                            <br><xmp class="ex">center</xmp> - po środku
+                            <br><xmp class="ex">stretch</xmp> - wypełnia całe dostępne miejsce
+                            <img src="align-item.png">
+                        </li>
+
+                        <li>
+                            <xmp>place-items: ;</xmp> - shorthand dla align i justify-items - w tej kolejności
+                            <br><xmp class="full">plase-items: center stretch;</xmp>
+                        </li>
+
+                        <li>
+                            <xmp>justify-self: ; | align-self: ;</xmp> - pozwala na pozycjonowanie jednego wybranego elementu, opisywane w grid itemie, to samo co <xmp class="ex">justify-items i align-items</xmp>
+                            <br><xmp class="ex">start</xmp> - od lewej
+                            <br><xmp class="ex">end</xmp> - od prawej
+                            <br><xmp class="ex">center</xmp> - po środku
+                            <br><xmp class="ex">stretch</xmp> - default, wypełnia całe dostępne miejsce
+
+                        </li>
+                        
+                        <li>
+                            <xmp>place-self: ;</xmp> -shorthand dla <xmp class="ex">align-self i justify-self</xmp> - w tej kolejności
+                            <br><xmp class="full">plase-self: center stretch;</xmp>
+                        </li> 
+
+                        <li>
+                            <xmp>justify-content: ;</xmp> - pozwala pozycjonować całe kolumny od lewej do prawej, opisywane w grid containers
+                            <br><xmp class="full">może byc konieczne ustawienie width</xmp>
+                            <br><xmp class="ex">start</xmp> - od lewej
+                            <br><xmp class="ex">end</xmp> - od prawej
+                            <br><xmp class="ex">center</xmp> - po środku
+                            <br><xmp class="ex">stretch</xmp> - wypełnia całe dostępne miejsce
+                            <br><xmp class="ex">space-around</xmp> - przerwa pomiędzy i wokół gridów, ale połowa na końcach
+                            <br><xmp class="ex">space-between</xmp> - przerwa tylko pomiędzy
+                            <br><xmp class="ex">space-evenly</xmp> - przerwa pomiędzy i wokół gridów, na końcach taka sama
+                            <img src="justify-content.png"
+                            
+                        </li>
+
+                        <li>
+                            <xmp>align-content: ;</xmp> - pozycjonuje całe wiersze wobec column axis, od góry do dołu, opisywane w grid containers
+                            <br><xmp class="full">może byc konieczne ustawienie height</xmp>
+                            <br><xmp class="ex">start</xmp> - od lewej
+                            <br><xmp class="ex">end</xmp> - od prawej
+                            <br><xmp class="ex">center</xmp> - po środku
+                            <br><xmp class="ex">stretch</xmp> - wypełnia całe dostępne miejsce
+                            <br><xmp class="ex">space-around</xmp> - przerwa pomiędzy i wokół gridów, ale połowa na końcach
+                            <br><xmp class="ex">space-between</xmp> - przerwa tylko pomiędzy
+                            <br><xmp class="ex">space-evenly</xmp> - przerwa pomiędzy i wokół gridów, na końcach taka sama
+                            <img src="align-content2.png">
+                        </li>
+
+                        <li>
+                            <xmp>place-content: ;</xmp> - shorthand dla <xmp class="ex">align-content i justify-content</xmp> -  w tej kolejności
+                            
+                            <br><xmp class="full">plase-content: center stretch;</xmp>
+                        </li>
+
+                        <li>
+                            <xmp>implicit grid</xmp> - kiedy treści na stronie przybywa i nie mieści sie w określone przez nas ramy grida, można zaprogramować dodawanie kolejnych wierszy, kolumn
+                            <br><xmp>grid-auto-rows: ;</xmp> - określa height nowo dodanych kolumn, opisywane w grid container
+                            <br><xmp>grid-auto-columns: ;</xmp> - określa width dodanych kolumn
+                            <br> Obydwie te właściwości przyjmują wartości:
+                            <br><xmp class="ex">procentowe %</xmp>
+                            <br><xmp class="ex">pikselowe px</xmp>
+                            <br><xmp class="ex">1fr</xmp>
+                            <br><xmp class="ex">funkcji repeat()</xmp>
+                            <br><xmp class="full"></xmp> jeśli nie podamy wartości auto, to nowe komórki dopasują się do zawartości, nie bedzie znana ich stała wielkość, rozpierducha w układzie strony
+                            <br><xmp class="full">albo! kolumny będą naśladowały istniejący układ szerokości z kolejnością dotychczasowego występowania</xmp>
+                            <img src="auto1.png"
+                            <br><xmp class="full">grid-auto-columns: 60px;</xmp>
+                            <img src="auto2.png">
+                        </li>
+
+                        <li>
+                            <xmp>grid-auto-flow: ;</xmp> - pozwala określić, czy nowo dodane elementy zostana dodane do wierszy czy kolumn, opisywane na grid containers
+                            <br><xmp class="ex">row</xmp> - defaulf, dodaje nowe elementy do ostatniego istniejacego wiersza, jesli jest miejsce, lub tworzy nowy
+                            <br><xmp class="ex">column</xmp> - nowe elementy dodawane do kolumn
+                            <br><xmp class="ex">dense</xmp> - pozwala zapełniać wczesniej powstałe dziury w gridzie, można parowac z wartościami <xmp class="ex">row i column</xmp>
+                            <br><xmp class="full">grid-auto-flow: row dense;</xmp>
+                            <br><xmp class="full">komórki A i E są określone ze spanem w doł, a reszta jest nieokreslona i układa się na podstawie auto-flow</xmp>
+                            <br><xmp class="ex">row</xmp>
+                            <img src="auto-flow1.svg">
+
+                            <br><xmp class="ex">column</xmp>
+                            <img src="auto-flow2.svg">
+                        </li>
+
+                        <li>
+                            <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">Grid Complete Guide</a>
+                        </li>
+
+                    </ul>
+                </p>
+            </section>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">Wireframes</h2>
+                <p class="data">25.05.2021</p>
+                <p class="tag">#css</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+
+                        <li>
+                            <xmp>wireframes</xmp> - blueprint, plan wstępny projektu strony, aplikacji itd. skupia sie na funkcjonalności i pozwala opracować plan działania dla dewelopera, zawiera zarys przygotowywanego projektu
+                            <img src="wireframes.png">
+                            <br>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/XTMYbqJaEOY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <img src="wireframe-example.png">
+                            <img src="swipy.jpg">
+                            <img src="swipy2.png">
+                            <img src="swipy3.png">
+                            <br><xmp class="ex">important notes:</xmp>
+                            <br>- jeśli strona jest dobrze zaprojektowana, to użytkownik będzie wiedział jak sie po niej poruszać nawet bez specjalnych kolorów i napisów
+                            <br>- wireframe pisany na kartce papieru jest dobry na początkowej fazie projektu, gdzie potrzeba duzo i łatwo zmieniać
+                            <br>- ważne, zeby dużo notować, to proces bardzo brudzący i zaśmiecający głowe, dobrze jest mieć to w miare poukładane i rozplanowane
+                            <br>- skupiamy sie na tym, co widzi uzytkownik, czego potrzebuje i jak jego potrzeby szybko zaspokoić
+                            <br>- ważna też jest przewidywalność, uzytkownik chce miec buttony w miejscach domyślnych, bez kombinowania
+                            <br>- przy tworzeniu wireframe nie skupiamy sie na grafice i przykładowych wypełnieniach, tylko na ramach, w miejsce zdjęć wstawiając iksy np., to odróżnia je od prototypu
+                            <br>- wireframe nadaje sie do zbierania opinii i wczesnego formowania kształtu projektu, nie do testowania działania
+                            <br>- do projektu można dodawac akcentowe kolory i adnotacje, pomagajace zrozumiec koncept
+
+                        
+
+                            <br><a href="https://careerfoundry.com/en/blog/ux-design/how-to-create-your-first-wireframe/">Wireframe Tutorial</a>
+
+                        </li>
+
+                        <li>
+                            <xmp>prototype</xmp> - interaktywna, pierwsza wersja gotowego projektu, stworzona do testowania i szerszego prezentowania konceptu, pozwala na sprawdzenie działania interakcji jak i ocenę designu
+                            <br>- Adobe XD do prototypowania, lub trzeba tworzyć kod końcowej wersji
+                            <br>- stwórz kilka wersji prototypu, nie pozostawaj przy swoim pierwszym koncenpcie, daj innym możliwośc wyboru
+                            
+                        </li>
+
+                        
+
+                    </ul>
+                </p>
+            </section>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">Transitions</h2>
+                <p class="data">11.06.2023</p>
+                <p class="tag">#css</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+                        <li>
+                            <xmp>property</xmp> - wybiera zmieniana w czasie wlasciwosc
+                            <br>
+                            <xmp class="full">transition-property: color;</xmp>
+                        </li>
+
+                        <li>
+                            <xmp>duration</xmp> - okresla dlugosc przejscia w dowolnym efekcie
+                            <br>
+                            <xmp class="full">transition-duration: 1s;</xmp> - moze przyjmowac wartosci w sekundach <xmp class="ex">1s \ 3.5s</xmp> lub milisekundach <xmp class="ex">400ms</xmp>                     </li>
+                      
+                        <li>
+                            <xmp>timing function</xmp> - definiuje predkosc przejscia i jego rodzaj troche jak w power poincie
+                            <br>
+                            <xmp class="full">transition-timing-function: ease;</xmp> - default, wybierany gdy nie zadeklarujemy innej
+                            <br>
+                            inne wartosci:
+                            <br>
+                            <xmp class="ex">ease-out</xmp>, <xmp class="ex">ease-in</xmp>, <xmp class="ex">linear</xmp>, <xmp class="ex">ease-in-out</xmp>, <xmp class="ex">step-start</xmp>, <xmp class="ex">step-end</xmp>, <xmp class="ex">steps(8, end)</xmp>, <xmp class="ex">cubic-bezier(0.1, 0.7, 1, 0.1)</xmp>, <xmp class="ex">initial</xmp>,  <xmp class="ex">inherit</xmp>,
+                            <br><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function">Inne wartosci opisane</a>, <a href="https://www.w3schools.com/cssref/css3_pr_animation-timing-function.php">i wiecej</a>
+                            
+                        </li>
+
+                        <li>
+                            <xmp>delay</xmp> - opoznienie w dzialaniu przejscia
+                            <br>
+                            <xmp class="full">transition-delay: 250ms;</xmp>
+                            <br><xmp class="ex">wartosci ujemne</xmp> - powoduja, ze animacja zaczyna od srodka
+                        </li>
+
+                        <li>
+                            <xmp>shorthand</xmp> - skrot dla powyzszych wartosci
+                            <br>
+                            <xmp class="full">transition: color 1.5s linear 0.5s;</xmp>
+                        </li>
+
+                        <li>
+                            <xmp>combinations</xmp> - pozwalaja utworzyc kilka przejsc odmiennych wlasciwosci w jednej linijce za pomoca przecinka ,
+                            <br>
+                            <xmp class="full">transition: color 1s linear, font-size 750ms ease-in 100ms;</xmp>
+                        </li>
+
+                        <li>
+                            <xmp>all</xmp> - aby przyspieszyc zapis, mozemy sprawic, ze wszystkie wlasciwosci beda tranzytowane w ten sam sposob, wybierajac all, jako property
+                            <br>
+                            <xmp class="full">transition: all 1.5s linear 0.5s;</xmp>
+
+                        </li>
+
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions">Wiecej w MDN</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transforms/Using_CSS_transforms">Przyklady uzycia</a></li>
+                    </ul>
+                </p>
+            </section>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">Animations</h2>
+                <p class="data"11.06.2023</p>
+                <p class="tag">#css</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+                        <li>
+                            <a href="https://thoughtbot.com/blog/css-animation-for-beginners">Cały kurs</a>, <a href="https://animate.style">Animki</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations">Documentation</a>
+                        </li>
+
+                        <li>
+                            <xmp>@keyframes</xmp> - poczatkowa faza tworzenia animacji, jej scenariusz, w ktorym definiujemy podstawowe zachowanie i styl animacji w poszczegolnych fazach, okreslonych przez wartosci procentowe, taka jakby funkcja, ktora mozna przypisac pozniej do innych pozycji w pliku css
+                            <br><img src="keyframes.png" alt="">animacja o nazwie bounceIn: najpierw element jest przezroczysty i zmniejszony do 10% wartosci, pozniej w drugim etapie sie powieksza do 120% i staje w pelni nieprzezroczysty, na koniec wraca do stanu normalnego, lekko sie zmniejszajac do 100% normalnego rozmiaru
+                        </li>
+
+                        <li>
+                            <xmp>animation properties</xmp> - dodawane juz do elementow pliku css, szczegolowe informacje dotyczace nazwy uzytej animacji, jej trwania i zachowania, podobne do Transitions
+                            <img src="animpro.png" alt="">
+                            <br><xmp class="ex">Shorthand i jego minimalna dlugosc:</xmp>
+                            <img src="animshort.png" alt="">
+                            <br><xmp class="ex">Caly shorthand:</xmp>
+                            <br>animation: [animation-name] [animation-duration] [animation-timing-function] [animation-delay] [animation-iteration-count] [animation-direction] [animation-fill-mode] [animation-play-state]
+                            <br><xmp class="ex">Przykladowy efekt:</xmp>
+                            <img src="efekt1.gif" alt="">
+                        </li>
+
+                        <li>
+                            <xmp>animation-iteration-count</xmp> - property z shorthanda, ile razy animacja ma zostac powtorzona
+                            <br>Mozliwe wartosci:
+                            <br><xmp class="ex">infinite</xmp> - powtarzana w nieskonczonosc
+                            <br><xmp class="ex">initial</xmp> - przywraca domyslna wartosc
+                            <br><xmp class="ex">inherit</xmp> - bierze wartosc od parent objectu
+                            <br><xmp class="ex">#</xmp> - po prostu wartosc odtworzen w formie liczbowej np. 3
+                            <br><xmp class="full">animation-iteration-count: 2;</xmp>
+                            <br><xmp class="full">animation:  bounceIn 2s ease-in-out 3s 2;</xmp>
+                            <img src="efekt2.gif" alt="">
+
+                        </li>
+
+                        <li>
+                            <xmp>animation-direction</xmp> - okresla czy animacja ma byc grana od poczatku, od konca, czy moze wracac w petli
+                            <br>Mozliwe wartosci:
+                            <br><xmp class="ex">normal</xmp> - defaulf, animacja na koncu jej trwania resetuje sie do stabu poczatkowego
+                            <br><xmp class="ex">reverse</xmp> - poczatek jest koncem
+                            <br><xmp class="ex">alternate</xmp> - najpierw default, a po jednym odtworzeniu odwrotnie, co pozwala zapetlac animacje ladnie ja skrajac
+                            <br><xmp class="ex">alternate-reverse</xmp> - jak wyzej, tylko koniec jest na poczatku
+                            <br><xmp class="full">animation-direction: alternate;</xmp>
+                            <br><xmp class="full">animation:  bounceIn 2s ease-in-out 3s 3 alternate;</xmp>
+                            <img src="efekt3.gif" alt="">
+                        </li>
+
+                        <li>
+                            <xmp>animation-fill-mode</xmp> - okresla, czy styl animowanego obiektu jest widoczny przed rozpoczeciem animacji oraz czy pozostaje po jej ukonczeniu, czy tez wroci do stanu poczatkowego
+                            <br>Mozliwe wartosci:
+                            <br><xmp class="ex">normal</xmp> - default, przywraca domyslne wartosci na obu koncach
+                            <br><xmp class="ex">backwards</xmp> - przed rozpoczeciem animacji obiekt nabiera wlasciwosci takich samych jak na poczatku tej animacji
+                            <br><xmp class="ex">forwards</xmp> - po zakonczonej animacji wlasciwosci pozostaja takie jak na koncu animacji
+                            <br><xmp class="ex">both</xmp> - zarowno poczatek jak i koniec jest dostosowany do animacji
+                            <br><xmp class="full">animation-fill-mode: forwards;</xmp>
+                            <br><xmp class="full">animation:  bounceIn 2s ease-in-out 3s 3 forwards;</xmp>
+                            <img src="efekt4.gif" alt="">
+                        </li>
+
+                        <li>
+                            <xmp>animation-play-state</xmp> - pozwala na zatrzymywanie animacji i jej wznawianie przy uzyciu np :hoverow
+                            <br>Mozliwe wartosci:
+                            <br><xmp class="ex">playing</xmp>
+                            <br><xmp class="ex">paused</xmp>
+                            <br><xmp class="full">.div:hover {animation-play-state: paused;}</xmp>
+                            <img src="efekt5.gif" alt="">
+                        </li>
+
+                        <li>
+                            <xmp>multiple animations</xmp> - podobnie jak w transitions, mozemy dodac kilka animacji w jednej linijce przy uzyciu przecinka ,
+                            <img src="animulti.png" alt="">
+                        </li>
+                    </ul>
+                </p>
+            </section>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">Transform</h2>
+                <p class="data"11.06.2023</p>
+                <p class="tag">#css</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+
+                        <li>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform">Podstawowy poradnik funkcji transform</a>
+                        </li>
+
+                    </ul>
+                </p>
+            </section>
+
+            <section class="lekcja">
+                <h2 class="lekcja-tytul">Next</h2>
+                <p class="data"11.06.2023</p>
+                <p class="tag">#css</p>
+                <p class="lekcja-notatki">
+                    <ul type="square">
+                    </ul>
+                </p>
+            </section>
+
+        </main>
+        <footer>
+            <div class="footer"><p>Michorek 2021</p></div>
+        </footer>
+    </body>
+</html>

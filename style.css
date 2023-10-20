@@ -1,0 +1,171 @@
+body{
+    background-color: hsl(2, 1%, 10%);
+    color:ivory;
+    font-family:sans-serif;
+    margin:auto;
+    
+}
+header {
+    text-align:center;
+    margin-bottom: 100px;
+    text-transform: uppercase;
+    border-bottom:2px dashed rgb(211, 248, 0);
+    font-size: 30px;
+    margin:20px 60px;
+    transform: rotate(3deg);
+}
+
+header h1{
+    text-shadow: black 2px 2px ;
+    
+}
+
+header span{
+    color: rgb(211, 248, 0);
+    position:relative;
+    right:100px;
+    top:23px;
+    background-color: hsl(2, 1%, 25%);
+    font-size: 20px;
+    z-index:-1;
+    padding-left:5px;
+    padding-right: 5px;
+    
+    
+}
+.footer{
+    background-color:hsl(2, 1%, 15%);
+    color:ivory;
+    padding:5px 25px;
+    font-size:small;
+    text-transform: uppercase;
+    text-align:center;
+    border-top: solid 1px rgb(68, 68, 68);
+    
+
+}
+
+.lekcja{
+    background-color: hsl(2, 1%, 15%);
+    padding:20px 0;
+    margin-bottom:40px;
+    border-bottom: dashed 1px rgb(68, 68, 68);
+    border-top: solid 1px rgb(68, 68, 68);
+    margin:40px 60px; 
+    
+}
+
+.lekcja-tytul {
+    padding: 10px 25px;
+    background-color:rgb(211, 248, 0);
+    color:hsl(2, 1%, 15%);
+    text-transform:uppercase;
+    letter-spacing: 0.2em;
+
+}
+
+.lekcja-notatki{
+    padding:0 25px;
+    
+}
+
+.data{
+    padding-left: 25px;
+    font-size:12px;
+    color:rgb(68, 68, 68);
+    
+}
+.tag{
+    padding-left: 25px;
+    font-size:12px;
+    color:hsl(2, 1%, 25%);
+    margin:0px;
+}
+
+xmp{
+    display: inline;
+    text-transform: uppercase;
+    color:rgb(219, 1, 110);
+    font-weight: bolder;
+    font-size:16px;
+    background-color: rgb(87, 2, 44);
+    
+    
+}
+
+.full {
+    display: inline;
+    text-transform:none;
+    color:rgb(32, 194, 14);
+    font-weight: 100;
+    font-size:16px;
+    background-color: rgb(65, 65, 65);
+    
+}
+
+li{
+    line-height: 2em;
+    background-color: hsl(2, 1%, 17%);
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    padding-bottom:5px;
+    padding-top:5px;
+}
+
+li img{
+    max-width: 400px;
+    height:auto;
+    display:block;
+    border-radius: 3px;
+}
+
+.ex {
+    display: inline;
+    text-transform:none;
+    color:rgb(223, 183, 2);
+    font-weight: 100;
+    font-size:16px;
+    background-color: rgb(82, 63, 0);
+}
+
+code {
+    display: inline;
+    text-transform:none;
+    color:rgb(32, 194, 14);
+    font-weight: 100;
+    font-size:16px;
+    background-color: rgb(65, 65, 65);
+}
+
+a:hover {
+    color:indigo;
+    background-color: rgb(218, 218, 218);
+    text-decoration: none;
+    
+}
+
+section a{
+    color: cadetblue;
+    transition: all 1s ease-in;
+}
+
+nav a{
+    text-decoration: none ;
+    text-transform: uppercase;
+    color: rgb(219, 1, 110);
+    font-weight: 100;
+    transition: all 1s ease-in;
+    
+}
+nav{
+    width: auto;
+    margin:20px;
+}
+nav li{
+    display:inline;
+    padding:5px;
+    border-radius: 0px;
+    background-color: rgb(87, 2, 44);
+    
+}
